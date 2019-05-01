@@ -1,15 +1,15 @@
 {
-  "name": "mclint",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "vuepress": "^0.14.11"
-  }
+	"name": "mclint",
+	"version": "1.0.0",
+	"description": "My personal website + blog.",
+	"scripts": {
+		"dev": "vuepress dev src",
+		"build": "vuepress build src"
+	},
+	"keywords": [],
+	"author": "Mbah Clinton",
+	"license": "ISC",
+	"devDependencies": {
+		"vuepress": "^0.14.11"
+	}
 }
