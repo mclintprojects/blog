@@ -41,4 +41,11 @@ export default {
   margin: auto;
   text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+  .image img {
+    object-fit: cover;
+    max-width: calc(100vw - 3.2rem);
+  }
+}
 </style>

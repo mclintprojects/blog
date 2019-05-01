@@ -99,11 +99,12 @@ body {
   pre {
     background: #292d3e;
     border-radius: 1rem;
-    padding: 1.6rem;
+    padding: 1.6rem 2.4rem;
     font-family: "Oxygen Mono", monospace;
+    white-space: pre-wrap;
+    overflow: auto;
 
     code {
-      white-space: pre-wrap;
       background: none;
       color: white;
 
@@ -132,7 +133,10 @@ body {
 }
 
 .content code {
-  background: #f3f4f4;
+  background: #7382af;
+  color: white;
+  font-family: "Oxygen Mono", monospace;
+  font-size: 1.8rem;
 }
 
 a {
@@ -147,6 +151,15 @@ a {
 
   body {
     padding: 0 1.6rem;
+  }
+
+  .content {
+    pre {
+      white-space: pre;
+      code {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 </style>

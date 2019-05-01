@@ -154,3 +154,96 @@ private void Initialize(Context context, IAttributeSet attrs = null)
     };
 }
 ```
+
+## 2. OnMeasure( int widthMeasureSpec, int heightMeasureSpec)
+
+When your view is being inflated, layout parameters are usually passed to it and it defines how much space your view should take. In **OnMeasure()** you get the chance to know how much space the user wants your view to take up so you can adjust your calculations to accommodate their requirements.
+
+In **OnMeasure()** there’s two important things you need to take note of: _MeasureSpecMode_ and _MeasureSpecSize_.
+
+1. **MeasureSpecSize** is the size the user sets as the width or height of your view.
+
+2. **MeasureSpecMode** is an enum.
+
+3. **MeasureSpecMode.AtMost**: The view can be as large as it wants up to the specified size (MeasureSpecSize).
+
+4. **MeasureSpecMode.Exactly**: The user has determined an exact size for the view.
+
+5. **MeasureSpecMode.Unspecified**: The parent has not imposed any constraint on the view. It can be whatever size it wants.
+
+<content-break />
+
+To get your heightMeasureSpecMode do:
+
+```csharp
+MeasureSpec.GetMode(heightMeasureSpec)
+```
+
+To get your heightMeasureSpecSize do:
+
+```csharp
+MeasureSpec.GetSize(heightMeasureSpec)
+```
+
+For width, the operation is still same but instead you’ll be passing in **widthMeasureSpec**.
+
+## 3. OnDraw(Canvas canvas)
+
+This is where the magic happens. Where you actually bring your custom view to life. Drawing is subjective, that is to say it is based on what your custom view is/should look like so there isn’t one tutorial that fits all. However, drawing on a canvas is the basis of all custom views so I recommend these articles that can explain in detail the intricacies of canvas drawing.
+
+[Canvas documentation](https://developer.android.com/reference/android/graphics/Canvas.html), [Canvas and Drawables](https://developer.android.com/guide/topics/graphics/2d-graphics.html), [Custom drawing](https://developer.android.com/training/custom-views/custom-drawing.html), and [Making ticket view](https://android.jlelse.eu/how-i-made-ticket-view-a-custom-view-for-android-20b83b175f8e?source=search_post---------2).
+
+One important thing to note in OnDraw() is that you should try to not instantiate new objects in it. OnDraw() is called a hundreds of times to draw your view, so quite quickly the objects you instantiate will start to eat up system resources and slow down your app. Ideally, instantiate all the objects required to draw your view in the **Initialize()** method I recommended that you create. If you need to change something, for example the color of a Paint object, change its color property instead of creating a new Paint object with the new color.
+
+## 4. Programmatic properties
+
+Not everyone creates custom views via layout xml, some people like to create views programmatically. Also, users might want to change the properties of your custom view at run-time so it is very important that they get access to the same (styleable) properties accessible via layout xml programmatically too. I recommend that for each styleable property you defined in your **attrs.xml** create a corresponding C# (programmatic) property that allows the user to manipulate the custom view.
+
+For **IconView**, here’s what a few of those properties looked like;
+
+```csharp
+/// <summary>
+/// The icon to show in the icon view.
+/// </summary>
+public Drawable Icon
+{
+    get => _icon;
+    set
+    {
+        _icon = value;
+        Invalidate();
+    }
+}
+
+/// <summary>
+/// The text to show as the icon view's label.
+/// </summary>
+public string LabelText
+{
+    get => _labelText;
+    set
+    {
+        _labelText = value;
+        Invalidate();
+    }
+}
+
+/// <summary>
+/// Show or hide a label for the icon view.
+/// </summary>
+public bool ShowIconLabel
+{
+    get => _showIconLabel;
+    set
+    {
+        _showIconLabel = value;
+        Invalidate();
+    }
+}
+```
+
+<content-break/>
+
+That’s it! We’re done. Obviously, IconView is a simple custom view so it isn’t a lot of work. However, I hope it’s a great entry point for you.
+
+You can dive deep into the code [here](https://github.com/mclintprojects/Alansa/blob/master/Alansa.Droid/Views/IconView.cs). Feel free to send pull requests that add more features or fix bugs I might have not seen.
