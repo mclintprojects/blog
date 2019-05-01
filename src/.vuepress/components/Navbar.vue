@@ -23,6 +23,10 @@ export default {
       this.mode = mode;
       this.$emit("modechange", mode);
     }
+  },
+  mounted() {
+    const mode = localStorage.getItem("mode");
+    if (mode) this.changeMode(mode);
   }
 };
 </script>

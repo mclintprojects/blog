@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Home from "./components/Home";
-import Post from "./components/Post";
-import Navbar from "./components/Navbar";
+import Home from "./Home";
+import Post from "../components/Post";
+import Navbar from "../components/Navbar";
 
 export default {
   components: { Home, Navbar, Post },
@@ -33,16 +33,7 @@ export default {
       root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.54)");
     }
   },
-  mounted() {
-    const mode = localStorage.getItem("mode");
-    if (mode) this.modeChanged(mode);
-
-    const head = document.querySelector("head");
-    const fontLink = document.createElement("link");
-    fontLink.href = "https://fonts.googleapis.com/css?family=Oxygen:400,700";
-    fontLink.rel = "stylesheet";
-    head.appendChild(fontLink);
-  }
+  mounted() {}
 };
 </script>
 
@@ -59,7 +50,6 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 500ms;
   font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--text-primary-light);
@@ -67,12 +57,18 @@ export default {
 
 body {
   background: var(--bg);
+  transition: all 500ms;
 }
 
 .page {
   width: var(--page-width);
   margin: auto;
   font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.content {
+  margin-top: 6rem;
 }
 
 .content p {
@@ -84,6 +80,20 @@ body {
 a {
   color: var(--text-primary);
   text-decoration: none;
+}
+
+.content img {
+  margin-top: 3rem;
+}
+
+.content caption {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.img-center {
+  margin: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
