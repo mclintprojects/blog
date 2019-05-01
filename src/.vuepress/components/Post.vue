@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: "Post",
   methods: {
     getDate(dateString) {
       return new Date(dateString).toDateString().substring(4);

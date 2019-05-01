@@ -10,6 +10,8 @@
 	"author": "Mbah Clinton",
 	"license": "ISC",
 	"devDependencies": {
+		"node-sass": "^4.12.0",
+		"sass-loader": "^7.1.0",
 		"vuepress": "^0.14.11"
 	}
 }

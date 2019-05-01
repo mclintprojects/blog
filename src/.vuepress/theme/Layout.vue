@@ -1,8 +1,8 @@
 <template>
   <div>
     <navbar @modechange="modeChanged"></navbar>
-    <Home v-if="$page.frontmatter.home"/>
-    <Post v-else/>
+    <home v-if="$page.frontmatter.home"/>
+    <post v-else/>
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 :root {
   --page-width: 74rem;
   --bg: #f8f2e5;
@@ -50,14 +50,14 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: var(--text-primary-light);
 }
 
 body {
   background: var(--bg);
   transition: all 500ms;
+  color: var(--text-primary-light);
+  font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .page {
@@ -65,35 +65,49 @@ body {
   margin: auto;
   font-size: 1.6rem;
   margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 
 .content {
   margin-top: 6rem;
-}
 
-.content p {
-  line-height: 3rem;
-  margin-top: 3rem;
-  font-size: 2rem;
+  p,
+  h1,
+  h2,
+  pre,
+  ol {
+    margin-top: 3rem;
+  }
+
+  p {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  ol {
+    margin-left: 3rem;
+
+    li {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  strong {
+    color: var(--text-primary);
+  }
+
+  pre {
+    background: #011627;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    color: #ffe232 !important;
+    font-family: "Oxygen Mono", monospace;
+  }
 }
 
 a {
   color: var(--text-primary);
   text-decoration: none;
-}
-
-.content img {
-  margin-top: 3rem;
-}
-
-.content caption {
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.img-center {
-  margin: auto;
-  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
