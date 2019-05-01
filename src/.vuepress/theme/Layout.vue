@@ -85,4 +85,14 @@ a {
   color: var(--text-primary);
   text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+  :root {
+    --page-width: 100%;
+  }
+
+  body {
+    padding: 0 1.6rem;
+  }
+}
 </style>
