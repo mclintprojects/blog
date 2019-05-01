@@ -34,15 +34,14 @@ export default {
     }
   },
   mounted() {
+    const mode = localStorage.getItem("mode");
+    if (mode) this.modeChanged(mode);
+
     const head = document.querySelector("head");
     const fontLink = document.createElement("link");
     fontLink.href = "https://fonts.googleapis.com/css?family=Oxygen:400,700";
     fontLink.rel = "stylesheet";
-
     head.appendChild(fontLink);
-
-    const mode = localStorage.getItem("mode");
-    if (mode) this.modeChanged(mode);
   }
 };
 </script>
