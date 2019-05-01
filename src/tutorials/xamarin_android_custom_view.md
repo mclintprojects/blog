@@ -95,7 +95,7 @@ The constructor below is called when a view is being inflated programmatically.
 public IconView(Context context) : base(context)
 ```
 
-The constructor below is called when a view is inflated from defined layout xml. When a view is created from an XML layout, all of the attributes in the XML tag are read from the resource bundle and passed into the view’s constructor as an IAttributeSet.
+The constructor below is called when a view is inflated from defined layout xml. When a view is created from an XML layout, all of the attributes in the XML tag are read from the resource bundle and passed into the view’s constructor as an [IAttributeSet](https://developer.android.com/reference/android/util/AttributeSet.html).
 
 ```csharp
 public IconView(Context context, IAttributeSet attrs) : base(context, attrs)
@@ -103,4 +103,54 @@ public IconView(Context context, IAttributeSet attrs) : base(context, attrs)
 
 ## 1. Initialize
 
-I usually define a single entry point for these constructors where I initialize everything required for the custom view. The single entry point is a method I call ‘Initialize’.
+I usually define a single entry point for these constructors where I initialize everything required for the custom view. The single entry point is a method I call "**Initialize**".
+
+```csharp
+protected IconView(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+{
+}
+
+public IconView(Context context) : base(context)
+{
+    Initialize(context);
+}
+
+public IconView(Context context, IAttributeSet attrs) : base(context, attrs)
+{
+    Initialize(context, attrs);
+}
+
+private void Initialize(Context context, IAttributeSet attrs = null)
+{
+    if (attrs != null)
+    {
+        // Contains the values set for the styleable attributes you declared in your attrs.xml
+        var array = context.ObtainStyledAttributes(attrs, Resource.Styleable.IconView, 0, 0);
+
+        iconBackgroundColor = array.GetColor(Resource.Styleable.IconView_bg_color, Color.Gray);
+        iconLabelTextColor = array.GetColor(Resource.Styleable.IconView_iconLabelTextColor, Color.ParseColor("#D9000000"));
+        _labelText = array.GetString(Resource.Styleable.IconView_iconLabelText);
+        _showIconLabel = array.GetBoolean(Resource.Styleable.IconView_showIconLabel, false);
+
+        var iconResId = array.GetResourceId(Resource.Styleable.IconView_src, 0);
+        if (iconResId != 0) // If the user actually set a drawable
+            _icon = AppCompatDrawableManager.Get().GetDrawable(context, iconResId);
+
+        // If the users sets text for the icon without setting the showIconLabel attr to true
+        // set it to true for the user anyways
+        if (_labelText != null)
+            _showIconLabel = true;
+
+        // Very important to recycle the array after use
+        array.Recycle();
+    }
+
+    iconBackgroundPaint = new Paint(PaintFlags.AntiAlias) { Color = iconBackgroundColor };
+    iconLabelTextColorPaint = new Paint(PaintFlags.AntiAlias)
+    {
+        Color = iconLabelTextColor,
+        TextSize = iconLabelTextSize,
+        TextAlign = Paint.Align.Center
+    };
+}
+```

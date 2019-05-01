@@ -97,12 +97,42 @@ body {
   }
 
   pre {
-    background: #011627;
+    background: #292d3e;
     border-radius: 1rem;
     padding: 1.6rem;
-    color: #ffe232 !important;
     font-family: "Oxygen Mono", monospace;
+
+    code {
+      white-space: pre-wrap;
+      background: none;
+      color: white;
+
+      .tag,
+      .keyword,
+      .operator {
+        color: #809fff;
+      }
+
+      .attr-name,
+      .function {
+        color: #ffe232;
+      }
+
+      .punctuation,
+      .class-name {
+        color: white;
+      }
+
+      .comment {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.54);
+      }
+    }
   }
+}
+
+.content code {
+  background: #f3f4f4;
 }
 
 a {
