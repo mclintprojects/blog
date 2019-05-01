@@ -14,17 +14,45 @@ import Navbar from "./components/Navbar";
 export default {
   components: { Home, Navbar, Post },
   methods: {
-    modeChanged() {}
+    modeChanged(mode) {
+      if (mode == "dark") this.switchToDark();
+      else this.switchToLight();
+
+      localStorage.setItem("mode", mode);
+    },
+    switchToDark() {
+      const root = document.documentElement.style;
+      root.setProperty("--bg", "#000000");
+      root.setProperty("--text-primary", "white");
+      root.setProperty("--text-primary-light", "rgba(255, 255, 255, 0.54)");
+    },
+    switchToLight() {
+      const root = document.documentElement.style;
+      root.setProperty("--bg", "#f8f2e5");
+      root.setProperty("--text-primary", "rgba(0, 0, 0, 0.8)");
+      root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.54)");
+    }
   },
   mounted() {
-    console.log(this);
+    const head = document.querySelector("head");
+    const fontLink = document.createElement("link");
+    fontLink.href = "https://fonts.googleapis.com/css?family=Oxygen:400,700";
+    fontLink.rel = "stylesheet";
+
+    head.appendChild(fontLink);
+
+    const mode = localStorage.getItem("mode");
+    if (mode) this.modeChanged(mode);
   }
 };
 </script>
 
 <style>
 :root {
-  --bg: #fff;
+  --page-width: 74rem;
+  --bg: #f8f2e5;
+  --text-primary: rgba(0, 0, 0, 0.8);
+  --text-primary-light: rgba(0, 0, 0, 0.54);
   font-size: 62.5%;
 }
 
@@ -33,18 +61,29 @@ export default {
   margin: 0;
   padding: 0;
   transition: all 500ms;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--text-primary-light);
+}
+
+body {
+  background: var(--bg);
 }
 
 .page {
-  width: 30%;
+  width: var(--page-width);
   margin: auto;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .content p {
   line-height: 3rem;
-  margin-top: 2.4rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
 }
 </style>
