@@ -14,6 +14,9 @@ export default {
     getDate(dateString) {
       return new Date(dateString).toDateString().substring(4);
     }
+  },
+  mounted() {
+    console.log(this.$page);
   }
 };
 </script>

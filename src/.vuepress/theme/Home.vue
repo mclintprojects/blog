@@ -21,7 +21,13 @@
 export default {
   computed: {
     pages() {
-      return this.$site.pages.filter(page => page.path.endsWith(".html"));
+      return this.$site.pages
+        .filter(page => page.path.endsWith(".html"))
+        .sort(
+          (page, next) =>
+            new Date(page.frontmatter.published).getTime() <
+            new Date(next.frontmatter.published).getTime()
+        );
     }
   },
   methods: {

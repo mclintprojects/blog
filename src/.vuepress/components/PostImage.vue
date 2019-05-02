@@ -11,7 +11,7 @@ export default {
   props: {
     src: { type: String, required: true },
     alt: { type: String, required: true },
-    caption: { type: String },
+    caption: { type: String, default: "" },
     align: { type: String, default: "center" },
     size: { type: String, default: "auto" }
   },
@@ -34,6 +34,7 @@ export default {
     display: block;
     font-size: 1.4rem;
     text-align: center;
+    margin-top: 0.8rem;
   }
 }
 

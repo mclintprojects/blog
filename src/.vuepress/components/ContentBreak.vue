@@ -9,8 +9,8 @@ export default {};
 <style>
 .content-break {
   height: 4rem;
-  width: 3rem;
+  width: 5rem;
   margin: auto;
-  border-bottom: double 0.1rem var(--text-primary-light);
+  border-bottom: dashed 0.2rem var(--text-primary-light);
 }
 </style>
