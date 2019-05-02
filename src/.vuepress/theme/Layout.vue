@@ -74,6 +74,7 @@ body {
   p,
   h1,
   h2,
+  h3,
   pre,
   ol {
     margin-top: 3rem;
