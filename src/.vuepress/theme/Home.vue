@@ -25,8 +25,8 @@ export default {
         .filter(page => page.path.endsWith(".html"))
         .sort(
           (page, next) =>
-            new Date(page.frontmatter.published).getTime() <
-            new Date(next.frontmatter.published).getTime()
+            new Date(next.frontmatter.published).getTime() -
+            new Date(page.frontmatter.published).getTime()
         );
     }
   },
