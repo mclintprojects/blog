@@ -13,5 +13,9 @@ module.exports = {
 			}
 		]
 	],
-	themeConfig: {}
+	themeConfig: {},
+	markdown: {
+		lineNumbers: true,
+		anchor: { permaLinkSymbol: '', permaLinkBefore: false }
+	}
 };

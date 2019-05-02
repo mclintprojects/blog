@@ -42,7 +42,7 @@ export default {
   --page-width: 74rem;
   --bg: #f8f2e5;
   --text-primary: rgba(0, 0, 0, 0.8);
-  --text-primary-light: rgba(0, 0, 0, 0.54);
+  --text-primary-light: rgba(0, 0, 0, 0.7);
   font-size: 62.5%;
 }
 
@@ -87,10 +87,13 @@ body {
   p {
     line-height: 3rem;
     font-size: 2rem;
+    white-space: pre-wrap;
+    word-wrap: wrap;
   }
 
   ol {
-    margin-left: 3rem;
+    margin-left: 1.6rem;
+    font-size: 2rem;
 
     li {
       margin-bottom: 2.4rem;
