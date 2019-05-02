@@ -55,7 +55,7 @@ export default {
 body {
   background: var(--bg);
   transition: all 500ms;
-  color: var(--text-primary-light);
+  color: var(--text-primary);
   font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }

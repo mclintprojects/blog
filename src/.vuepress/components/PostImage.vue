@@ -28,6 +28,7 @@ export default {
 
   img {
     margin-top: 3rem;
+    max-width: var(--page-width);
   }
 
   small {
