@@ -71,6 +71,10 @@ body {
 .content {
   margin-top: 6rem;
 
+  a {
+    text-decoration: underline;
+  }
+
   p,
   h1,
   h2,
