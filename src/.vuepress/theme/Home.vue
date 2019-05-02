@@ -35,7 +35,7 @@ export default {
       return new Date(dateString).toDateString().substring(4);
     },
     getReadTimeLabel(readTime) {
-      return `${readTime} ${readTime > 1 ? "mins" : "min"} read`;
+      return `${readTime} ${readTime == 0 ? "mins" : "min"} read`;
     }
   }
 };
