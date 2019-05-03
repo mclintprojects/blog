@@ -24,13 +24,13 @@ export default {
       const root = document.documentElement.style;
       root.setProperty("--bg", "#000000");
       root.setProperty("--text-primary", "white");
-      root.setProperty("--text-primary-light", "rgba(255, 255, 255, 0.54)");
+      root.setProperty("--text-primary-light", "rgba(255, 255, 255, 0.7)");
     },
     switchToLight() {
       const root = document.documentElement.style;
       root.setProperty("--bg", "#f8f2e5");
       root.setProperty("--text-primary", "rgba(0, 0, 0, 0.8)");
-      root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.54)");
+      root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.7)");
     }
   },
   mounted() {}
@@ -55,7 +55,7 @@ export default {
 body {
   background: var(--bg);
   transition: all 500ms;
-  color: var(--text-primary);
+  color: var(--text-primary-light);
   font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -65,7 +65,6 @@ body {
   margin: auto;
   font-size: 1.6rem;
   margin-top: 3rem;
-  margin-bottom: 10rem;
 }
 
 .content {
@@ -88,7 +87,7 @@ body {
     line-height: 3rem;
     font-size: 2rem;
     white-space: pre-wrap;
-    word-wrap: wrap;
+    word-wrap: break-all;
   }
 
   ol {

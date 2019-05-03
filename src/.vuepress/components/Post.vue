@@ -4,6 +4,8 @@
     <p>{{getDate($page.frontmatter.published)}}</p>
 
     <Content/>
+
+    <footer></footer>
   </div>
 </template>
 
@@ -21,8 +23,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 h1 {
   color: var(--text-primary);
+}
+
+footer {
+  margin-top: 6rem;
+  border-top: 0.1rem solid var(--text-primary-light);
+  padding-top: 3rem;
 }
 </style>
