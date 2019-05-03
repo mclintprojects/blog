@@ -12,6 +12,5 @@ module.exports = {
 					'https://fonts.googleapis.com/css?family=Oxygen:400,700|Oxygen+Mono'
 			}
 		]
-	],
-	themeConfig: {}
+	]
 };
