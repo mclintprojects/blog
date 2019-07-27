@@ -3,7 +3,7 @@
     <h1>{{$page.title}}</h1>
     <p>{{getDate($page.frontmatter.published)}}</p>
 
-    <Content/>
+    <Content />
 
     <footer>
       <div v-if="nextPost">
@@ -56,6 +56,20 @@ h1 {
   color: var(--text-primary);
 }
 
+ul {
+  margin-top: 1.6rem;
+  list-style: disc !important;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+li ul {
+  margin-left: 3rem;
+}
+
 footer {
   margin-top: 6rem;
   border-top: 0.1rem solid var(--text-primary-light);
@@ -87,6 +101,7 @@ footer {
     display: flex;
     justify-content: space-between;
     color: var(--text-primary);
+    list-style: none !important;
   }
 }
 </style>

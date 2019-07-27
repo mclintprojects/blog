@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="home page">
     <section class="intro">
       <a href="https://clintonmbah.com">Mbah Clinton</a>
       <p>softie. computer nerd with (yuuuge) muscles. i make cool things that run on android and the web with kotlin, vuejs, rails, and nodejs.</p>
@@ -41,41 +41,43 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .intro {
   margin-top: 2.4rem;
+
+  a {
+    font-weight: bold;
+
+    + p {
+      color: var(--text-primary-light);
+    }
+  }
 }
 
-.intro a {
-  font-weight: bold;
-}
+.home {
+  ul {
+    margin-top: 6rem;
+    list-style: none !important;
 
-.intro a + p {
-  color: var(--text-primary-light);
-}
+    li {
+      margin-bottom: 1.6rem;
 
-ul {
-  margin-top: 6rem;
-  list-style: none;
-}
+      a {
+        color: var(--text-primary-light);
+        text-decoration: none;
 
-ul li {
-  margin-bottom: 1.6rem;
-}
+        p:first-child {
+          font-weight: bold;
+          color: var(--text-primary);
+          font-size: 2.4rem;
+          text-transform: capitalize;
 
-ul li a {
-  color: var(--text-primary-light);
-  text-decoration: none;
-}
-
-ul li a p:first-child {
-  font-weight: bold;
-  color: var(--text-primary);
-  font-size: 2.4rem;
-  text-transform: capitalize;
-}
-
-ul li a p:first-child + p {
-  font-size: 1.4rem;
+          + p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 </style>

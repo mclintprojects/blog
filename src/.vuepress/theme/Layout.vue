@@ -1,8 +1,8 @@
 <template>
   <div>
     <navbar @modechange="modeChanged"></navbar>
-    <home v-if="$page.frontmatter.home"/>
-    <post v-else/>
+    <home v-if="$page.frontmatter.home" />
+    <post v-else />
   </div>
 </template>
 
@@ -122,13 +122,18 @@ body {
       }
 
       .attr-name,
-      .function {
+      .function,
+      .constant {
         color: #ffe232;
       }
 
       .punctuation,
       .class-name {
         color: white;
+      }
+
+      .symbol {
+        color: #990055;
       }
 
       .comment {
