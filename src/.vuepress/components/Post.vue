@@ -63,11 +63,11 @@ ul {
 
 ul li {
   margin-bottom: 1rem;
-  font-size: 2rem;
 }
 
 li ul {
-  margin-left: 3rem;
+  margin-top: 0rem !important;
+  margin-left: 1.6rem;
 }
 
 footer {

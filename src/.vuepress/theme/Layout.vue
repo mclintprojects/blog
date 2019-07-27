@@ -83,11 +83,11 @@ body {
     margin-top: 3rem;
   }
 
-  p {
-    line-height: 3rem;
+  p,
+  li {
     font-size: 2rem;
-    white-space: pre-wrap;
-    word-wrap: break-all;
+    line-height: 3rem;
+    word-wrap: break-word;
   }
 
   ol {
@@ -156,7 +156,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 48rem) {
   :root {
     --page-width: 100%;
   }
@@ -165,12 +165,21 @@ a {
     padding: 0 1.6rem;
   }
 
+  ul {
+    margin-left: 1.6rem;
+  }
+
   .content {
     pre {
       white-space: pre;
       code {
         font-size: 1.3rem;
       }
+    }
+
+    p,
+    li {
+      font-size: 1.8rem;
     }
   }
 }
