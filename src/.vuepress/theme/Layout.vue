@@ -67,7 +67,7 @@ body {
   margin-top: 3rem;
 }
 
-.content {
+.content__default {
   margin-top: 6rem;
 
   a {
@@ -144,7 +144,7 @@ body {
   }
 }
 
-.content code {
+.content__default code {
   background: #0040ff;
   color: white;
   font-family: "Oxygen Mono", monospace;
@@ -169,7 +169,7 @@ a {
     margin-left: 1.6rem;
   }
 
-  .content {
+  .content__default {
     pre {
       white-space: pre;
       code {

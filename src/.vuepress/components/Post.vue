@@ -59,6 +59,7 @@ h1 {
 h1 + p {
   padding-bottom: 0.4rem;
   border-bottom: 0.1rem solid var(--text-primary);
+  margin-bottom: 3rem;
 }
 
 ul {
