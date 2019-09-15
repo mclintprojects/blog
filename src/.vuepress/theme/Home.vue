@@ -1,9 +1,5 @@
 <template>
   <div class="home page">
-    <section class="intro">
-      <a href="https://clintonmbah.com">Mbah Clinton</a>
-      <p>softie. computer nerd with (yuuuge) muscles. i make cool things that run on android and the web with kotlin, vuejs, rails, and nodejs.</p>
-    </section>
     <section>
       <ul>
         <li v-for="(page, index) in pages" :key="index" class="article">
@@ -42,25 +38,15 @@ export default {
 </script>
 
 <style lang="scss">
-.intro {
-  margin-top: 2.4rem;
-
-  a {
-    font-weight: bold;
-
-    + p {
-      color: var(--text-primary-light);
-    }
-  }
-}
-
 .home {
   ul {
     margin-top: 6rem;
     list-style: none !important;
 
     li {
-      margin-bottom: 1.6rem;
+      margin-bottom: 2.4rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 0.1rem solid var(--text-primary);
 
       a {
         color: var(--text-primary-light);
@@ -76,6 +62,10 @@ export default {
             font-size: 1.4rem;
           }
         }
+      }
+
+      &:last-child {
+        border-bottom: none;
       }
     }
   }

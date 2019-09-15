@@ -28,7 +28,7 @@ export default {
     },
     switchToLight() {
       const root = document.documentElement.style;
-      root.setProperty("--bg", "#f8f2e5");
+      root.setProperty("--bg", "#ffffff");
       root.setProperty("--text-primary", "rgba(0, 0, 0, 0.8)");
       root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.7)");
     }
@@ -40,7 +40,7 @@ export default {
 <style lang="scss">
 :root {
   --page-width: 74rem;
-  --bg: #f8f2e5;
+  --bg: #ffffff;
   --text-primary: rgba(0, 0, 0, 0.8);
   --text-primary-light: rgba(0, 0, 0, 0.7);
   font-size: 62.5%;
@@ -56,7 +56,7 @@ body {
   background: var(--bg);
   transition: all 500ms;
   color: var(--text-primary-light);
-  font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -104,21 +104,21 @@ body {
   }
 
   pre {
-    background: #292d3e;
+    background: #171822;
     border-radius: 1rem;
     padding: 1.6rem 2.4rem;
-    font-family: "Oxygen Mono", monospace;
+    font-family: "DM Sans", monospace;
     white-space: pre-wrap;
     overflow: auto;
 
     code {
       background: none;
-      color: white;
+      color: rgb(82, 255, 241);
 
       .tag,
       .keyword,
       .operator {
-        color: #809fff;
+        color: #0040ff;
       }
 
       .attr-name,
@@ -129,11 +129,11 @@ body {
 
       .punctuation,
       .class-name {
-        color: white;
+        color: rgb(170, 226, 233);
       }
 
       .symbol {
-        color: #990055;
+        color: #e0057e;
       }
 
       .comment {
@@ -145,7 +145,7 @@ body {
 }
 
 .content code {
-  background: #7382af;
+  background: #0040ff;
   color: white;
   font-family: "Oxygen Mono", monospace;
   font-size: 1.8rem;

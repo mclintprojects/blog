@@ -56,6 +56,11 @@ h1 {
   color: var(--text-primary);
 }
 
+h1 + p {
+  padding-bottom: 0.4rem;
+  border-bottom: 0.1rem solid var(--text-primary);
+}
+
 ul {
   margin-top: 1.6rem;
   list-style: disc !important;
@@ -81,11 +86,12 @@ footer {
 
     p {
       text-transform: uppercase;
-      font-weight: bold;
       font-size: 1.1rem;
       margin-bottom: 0.4rem;
+      color: var(--text-primary);
 
       + a {
+        font-weight: bold;
         font-size: 3rem;
         color: var(--text-primary);
 

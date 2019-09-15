@@ -8,8 +8,7 @@ module.exports = {
 			'link',
 			{
 				rel: 'stylesheet',
-				href:
-					'https://fonts.googleapis.com/css?family=Oxygen:400,700|Oxygen+Mono'
+				href: 'https://fonts.googleapis.com/css?family=DM+Sans:400,700'
 			}
 		]
 	]
