@@ -1,5 +1,5 @@
 module.exports = {
-	title: 'Mbah Clinton',
+	title: 'Clinton Mbah',
 	description:
 		'Full-stack software engineer specializing in web and mobile applications. Kotlin/Android, JavaScript/Vue/Node, and Ruby/Rails 5.',
 	head: [
