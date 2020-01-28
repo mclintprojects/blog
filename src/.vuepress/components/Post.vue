@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h1>{{$page.title}}</h1>
-    <p>{{getDate($page.frontmatter.published)}}</p>
+    <p>{{getDate($page.frontmatter.published)}} &bull; {{getReadTimeLabel($page.frontmatter.readTime)}}</p>
 
     <Content />
 
@@ -43,6 +43,9 @@ export default {
   methods: {
     getDate(dateString) {
       return new Date(dateString).toDateString().substring(4);
+    },
+    getReadTimeLabel(readTime) {
+      return `${readTime} ${readTime == 0 ? "mins" : "min"} read`;
     }
   },
   mounted() {
@@ -54,10 +57,12 @@ export default {
 <style lang="scss">
 h1 {
   color: var(--text-primary);
+  font-size: 6rem;
 }
 
 h1 + p {
-  padding-bottom: 0.4rem;
+  margin-top: 1.6rem;
+  padding-bottom: 3rem;
   border-bottom: 0.1rem solid var(--text-primary);
   margin-bottom: 3rem;
 }

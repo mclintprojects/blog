@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss">
 :root {
-  --page-width: 74rem;
+  --page-width: 35%;
   --bg: #ffffff;
   --text-primary: rgba(0, 0, 0, 0.8);
   --text-primary-light: rgba(0, 0, 0, 0.7);

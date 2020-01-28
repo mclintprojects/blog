@@ -44,8 +44,7 @@ export default {
     list-style: none !important;
 
     li {
-      margin-bottom: 2.4rem;
-      padding-bottom: 0.8rem;
+      padding: 3rem 0;
       border-bottom: 0.1rem solid var(--text-primary);
 
       a {
@@ -55,11 +54,11 @@ export default {
         p:first-child {
           font-weight: bold;
           color: var(--text-primary);
-          font-size: 2.4rem;
+          font-size: 6rem;
           text-transform: capitalize;
 
           + p {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
           }
         }
       }
