@@ -40,12 +40,10 @@ export default {
 <style lang="scss">
 .home {
   ul {
-    margin-top: 6rem;
     list-style: none !important;
 
     li {
-      padding: 3rem 0;
-      border-bottom: 0.1rem solid var(--text-primary);
+      margin-bottom: 3rem;
 
       a {
         color: var(--text-primary-light);
@@ -54,11 +52,11 @@ export default {
         p:first-child {
           font-weight: bold;
           color: var(--text-primary);
-          font-size: 6rem;
-          text-transform: capitalize;
+          font-size: 3rem;
 
           + p {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
           }
         }
       }

@@ -6,13 +6,14 @@ readTime: 3
 
 ### For the purpose of this tutorial, assume we're making a custom generator named `gqlspec`.
 
-- Run `rails g generate gqlspec`. It should generate the following files and folders.
+Run `rails g generate gqlspec`. It should generate the following files and folders.
   - `lib/generators`
   - `lib/generators/gqlspec`
   - `lib/generators/gqlspec/templates`
   - `lib/generators/gqlspec/gqlspec_generator.rb`
   - `lib/generators/gqlspec/USAGE`
-- Edit your USAGE file with the appropriate data. The data in this file will be shown whenever you run `rails g gqlspec --help`
+
+Edit your USAGE file with the appropriate data. The data in this file will be shown whenever you run `rails g gqlspec --help`
 
 ```
 // lib/generators/gqlspec/USAGE
@@ -27,7 +28,7 @@ Example:
         spec/graphql/mutations/mutation_name_spec.rb
 ```
 
-- In your `lib/generators/gqlspec/gqlspec_generator.rb` file
+In your `lib/generators/gqlspec/gqlspec_generator.rb` file
   - Change `Rails::Generators::NamedBase` to `Rails::Generators::Base`. Inheriting from `NamedBase` with automatically define a `name` argument with its value set to your custom generator's name.
   - Define the arguments for your generator.
 
@@ -35,7 +36,7 @@ Example:
 argument :mutation, type: :string, required: true, default: "", description: ""
 ```
 
-- **Optionally**, define options for your generator. You can access an option `arguments` with `options[:arguments]`
+- **Optionally**, define options for your generator. You can access an option's arguments with `options[:arguments]`
 
 ```ruby
 class_option :arguments, type: :array, required: true, default: []
@@ -76,7 +77,7 @@ end
 - Any public methods in your generator class will automatically be called in the order they were defined. If you don't want a method to be called, mark it as private.
 - Methods defined in your generator class will be available for use in your template.
 
-Here's what your generator class should look like in the end.
+Here's what your generator class should look like in the end:
 
 ```ruby
 # lib/generators/gqlspec/gqlspec_generator.rb
@@ -101,7 +102,7 @@ class GqlSpecGenerator < Rails::Generators::Base
 end
 ```
 
-Here's what using it will looks like
+Here's what using it will look like:
 
 - Run `rails g gqlspec forgot_password --arguments email`
 - If you followed this tutorial correctly, our gqlspec generator should generate the file below:

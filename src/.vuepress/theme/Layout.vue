@@ -39,9 +39,9 @@ export default {
 
 <style lang="scss">
 :root {
-  --page-width: 35%;
+  --page-width: 40%;
   --bg: #ffffff;
-  --text-primary: rgba(0, 0, 0, 0.8);
+  --text-primary: rgba(0, 0, 0, 1);
   --text-primary-light: rgba(0, 0, 0, 0.7);
   font-size: 62.5%;
 }
@@ -56,8 +56,8 @@ body {
   background: var(--bg);
   transition: all 500ms;
   color: var(--text-primary-light);
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Marcellus", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .page {
@@ -85,7 +85,7 @@ body {
 
   p,
   li {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 3rem;
     word-wrap: break-word;
   }
@@ -107,7 +107,7 @@ body {
     background: #171822;
     border-radius: 1rem;
     padding: 1.6rem 2.4rem;
-    font-family: "DM Sans", monospace;
+    font-family: monospace;
     white-space: pre-wrap;
     overflow: auto;
 
@@ -145,10 +145,12 @@ body {
 }
 
 .content__default code {
-  background: #0040ff;
+  background: #202020;
   color: white;
-  font-family: "Oxygen Mono", monospace;
-  font-size: 1.8rem;
+  font-family: "consolas";
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.3rem;
 }
 
 a {

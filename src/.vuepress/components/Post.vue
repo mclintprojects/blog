@@ -57,19 +57,19 @@ export default {
 <style lang="scss">
 h1 {
   color: var(--text-primary);
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 h1 + p {
-  margin-top: 1.6rem;
-  padding-bottom: 3rem;
-  border-bottom: 0.1rem solid var(--text-primary);
+  font-size: 1.2rem;
+  text-transform: uppercase;
   margin-bottom: 3rem;
 }
 
 ul {
   margin-top: 1.6rem;
   list-style: disc !important;
+  margin-left: 3.2rem;
 }
 
 ul li {
