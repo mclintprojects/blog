@@ -1,7 +1,7 @@
 {
 	"name": "mclint",
 	"version": "1.0.0",
-	"description": "My personal website + blog.",
+	"description": "My personal blog.",
 	"scripts": {
 		"dev": "vuepress dev src",
 		"build": "vuepress build src"

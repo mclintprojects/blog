@@ -56,8 +56,7 @@ body {
   background: var(--bg);
   transition: all 500ms;
   color: var(--text-primary-light);
-  font-family: "Marcellus", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Hind", sans-serif;
 }
 
 .page {
@@ -86,7 +85,7 @@ body {
   p,
   li {
     font-size: 1.6rem;
-    line-height: 3rem;
+    line-height: 2.4rem;
     word-wrap: break-word;
   }
 
@@ -95,7 +94,7 @@ body {
     font-size: 2rem;
 
     li {
-      margin-bottom: 2.4rem;
+      margin-bottom: 1.6rem;
     }
   }
 
@@ -107,33 +106,34 @@ body {
     background: #171822;
     border-radius: 1rem;
     padding: 1.6rem 2.4rem;
-    font-family: monospace;
+    font-family: "consolas";
+    font-size: 1.2rem;
     white-space: pre-wrap;
     overflow: auto;
 
     code {
       background: none;
-      color: rgb(82, 255, 241);
+      color: rgb(188, 212, 210);
 
       .tag,
       .keyword,
       .operator {
-        color: #0040ff;
+        color: #abbdc9;
       }
 
       .attr-name,
       .function,
       .constant {
-        color: #ffe232;
+        color: #2f97b1;
       }
 
       .punctuation,
       .class-name {
-        color: rgb(170, 226, 233);
+        color: rgb(130, 238, 252);
       }
 
       .symbol {
-        color: #e0057e;
+        color: #b6e5fa;
       }
 
       .comment {
@@ -145,7 +145,7 @@ body {
 }
 
 .content__default code {
-  background: #202020;
+  background: #171822;
   color: white;
   font-family: "consolas";
   font-size: 1.2rem;
