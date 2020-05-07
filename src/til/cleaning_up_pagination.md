@@ -1,7 +1,8 @@
 ---
-title: 'TIL #1 - Cleaning up pagination (Ruby)'
+title: 'TIL #1 - Cleaning up pagination'
 published: 05/07/2020
 readTime: 3
+tags: ['ruby', 'const_set', 'meta-programming']
 ---
 
 TIL is going to be a series of posts where I share the details of new information (mostly code-related) that I recently encountered and deem worthy of writing about.

@@ -11,5 +11,18 @@ module.exports = {
 				href: 'https://fonts.googleapis.com/css2?family=Hind:wght@400;500&display=swap'
 			}
 		]
-	]
+	],
+	plugins: {
+		'seo': {
+			siteTitle: (_, $site) => $site.title,
+			title: $page => $page.frontmatter.title,
+			description: $page => $page.frontmatter.description,
+			author: () => ({ name: "Clinton Mbah", twitter: "@mclint_" }),
+			tags: $page => $page.frontmatter.tags,
+			twitterCard: _ => 'summary_large_image',
+			url: (_, __, path) => 'blog.clintonmbah.com' + path,
+			image: (_, $site) => '/images/banner.png',
+			publishedAt: $page => new Date($page.frontmatter.published),
+		}
+	}
 };
