@@ -1,3 +1,5 @@
+const baseUrl = 'blog.clintonmbah.com'
+
 module.exports = {
 	title: 'Clinton Mbah',
 	description:
@@ -20,8 +22,8 @@ module.exports = {
 			author: () => ({ name: "Clinton Mbah", twitter: "@mclint_" }),
 			tags: $page => $page.frontmatter.tags,
 			twitterCard: _ => 'summary_large_image',
-			url: (_, __, path) => 'blog.clintonmbah.com' + path,
-			image: (_, $site) => '/images/banner.png',
+			url: (_, __, path) => `${baseUrl}${path}`,
+			image: () => `${baseUrl}/images/banner.png`,
 			publishedAt: $page => new Date($page.frontmatter.published),
 		}
 	}
