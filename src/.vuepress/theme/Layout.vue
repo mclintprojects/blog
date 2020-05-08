@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss">
 :root {
-  --page-width: 40%;
+  --page-width: 35%;
   --bg: #ffffff;
   --text-primary: rgba(0, 0, 0, 1);
   --text-primary-light: rgba(0, 0, 0, 0.7);
@@ -105,7 +105,7 @@ body {
   pre {
     background: #171822;
     border-radius: 1rem;
-    padding: 1.6rem 2.4rem;
+    padding: 1.6rem;
     font-family: "consolas";
     font-size: 1.2rem;
     white-space: pre-wrap;

@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"node-sass": "^4.14.1",
 		"sass-loader": "^7.3.1",
-		"vuepress": "^1.2.0",
+		"vuepress": "^1.4.1",
 		"vuepress-plugin-seo": "^0.1.2"
 	}
 }
