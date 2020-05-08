@@ -73,8 +73,7 @@ class User
       # here we're defining a password setter and an authenticate instance method
       self.class_eval do
         def password=(password)
-          digest = BCrypt::Password.create(password, salt: 12)
-          self.update(password_digest: digest)
+          self.password_digest = BCrypt::Password.create(password, salt: 12)
         end
 
         def authenticate(password)
