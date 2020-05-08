@@ -5,9 +5,11 @@ readTime: 5
 tags: ['ruby', 'class methods', 'meta-programming']
 ---
 
-I've always been a huge fan of class methods, even before I knew what they actually were. Mostly because they almost always were readable, tiny-footprint methods that packed a punch. Take `validates_presence_of` or `has_secure_password` for example, you're mostly interfacing with an otherwise "simple" method but a **ton** of nice things are happening for you under the hood.
+I've always been a huge fan of class methods, even before I knew what they actually were. This is mostly because they almost always were readable, tiny-footprint methods that packed a punch. Take `validates_presence_of` or `has_secure_password` for example, you're mostly interfacing with an otherwise "simple" method but a **ton** of nice things are happening for you under the hood.
 
-That said, wondering about how to make my own version of `validates_presence_of` is how I learnt about class methods. Quick explainer: class methods are methods that live on and are called on the class itself. Class methods are inherited by descendants of the class but aren't available to its instances — use instance methods instead.
+That said, wondering about how to make my own version of `validates_presence_of` is how I learnt about class methods.
+
+Quick explainer: class methods are methods that live on and can only be called on the class itself. Class methods are inherited by descendants of the class but aren't available to its instances — use instance methods instead.
 
 ```ruby
 class ActiveRecord
@@ -27,11 +29,11 @@ user = User.new
 user.validates_presence_of(:name) # undefined method `validates_presence_of' for #<User:0x0000557920dac930>
 ```
 
-In the example above, `validates_presence_of` lives on the ActiveRecord class itself. It's descendants inherit it and are able to call it.
+In the example above, `validates_presence_of` lives on the ActiveRecord class itself. Its descendants inherit it and are able to call it.
 
 ## Defining class methods
 
-There's different ways to define class methods. I'd recommend going with 1 or 2 as shown below. Ideally and unlike in Style 3, you shouldn't repeat yourself very often in your code. With Style 3, should you ever rename your class you'd have to also find all of its class methods and update them too.
+There's different ways to define class methods. I'd recommend going with Style 1 or 2 as shown below. Ideally and unlike in Style 3, you shouldn't repeat yourself very often in your code. With Style 3, should you ever rename your class you'd have to also find all of its class methods and update them too.
 
 ```ruby
 # Style 1
