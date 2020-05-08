@@ -149,7 +149,6 @@ body {
   color: white;
   font-family: "consolas";
   font-size: 1.2rem;
-  padding: 0.2rem 0.8rem;
   border-radius: 0.3rem;
 }
 
