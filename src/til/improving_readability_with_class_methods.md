@@ -77,7 +77,7 @@ class User
 
         def authenticate(password)
           digest = BCrypt::Password.new(self.password_digest)
-          digest == password
+          if digest == password
             self
           else
             false
