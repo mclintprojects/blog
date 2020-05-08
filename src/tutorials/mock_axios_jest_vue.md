@@ -1,5 +1,5 @@
 ---
-title: Easiest way to mock axios (Jest + Vue)
+title: How to mock axios (Jest + Vue)
 published: 5/8/2019
 readTime: 4
 ---
