@@ -1,7 +1,7 @@
 ---
 title: 'TIL #1 - Cleaning up pagination'
 published: 05/07/2020
-readTime: 3
+readTime: 2
 tags: ['ruby', 'const_set', 'meta-programming']
 ---
 
