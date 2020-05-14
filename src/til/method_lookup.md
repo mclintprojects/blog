@@ -1,5 +1,5 @@
 ---
-title: 'TIL #3 - Method look-up in ruby'
+title: 'TIL #3 - Method look-up in Ruby'
 published: 05/14/2020
 readTime: 2
 tags: ['ruby', 'method lookup', 'foundational']
