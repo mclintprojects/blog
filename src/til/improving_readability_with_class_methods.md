@@ -103,6 +103,7 @@ module Authorizable
   def self.include(base)
     # self.include is called when a module is included in a class with 'include <Module>'
     # its first parameter is the class the module is being included in
+    # 'extend' adds the methods defined in a module as class methods on the extending class. it's opposite is 'include'
     base.extend AuthorizableClassMethods
   end
 
