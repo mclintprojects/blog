@@ -9,9 +9,9 @@ I stumbled across this TIL because I've been looking up advanced topics in a bid
 
 ### Super useful preamble
 
-- Everything in Ruby is an object. Unsurprisingly, the root ancestor of all things in Ruby is `Object`.
+- Everything in Ruby is an object. Unsurprisingly, the root ancestor of all things in Ruby is `BasicObject`.
 - All classes have a `Class` ancestor.
-- All classes inherit from `Module` which means every class is sort of a module. "Sort of" because unlike actual modules you can't mixin classes. `Module` adds in initialization and a few other properties to classes.
+- `Class` inherits from `Module` which means every class is sort of a module. "Sort of" because unlike actual modules you can't mixin classes. `Module` adds in instantiation, properties etc to classes.
 
 Method lookup in Rails is possible because of a few fields all Ruby objects, classes, and modules have.
 
