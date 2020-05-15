@@ -9,7 +9,8 @@ I stumbled across this TIL because I've been looking up advanced topics in a bid
 
 ### Super useful preamble
 
-- Everything in Ruby is an object. Unsurprisingly, the root ancestor of all things in Ruby is `BasicObject`.
+- Everything in Ruby is an object.
+- All Ruby objects have an ancestor chain. `BasicObject` is always at the end of that chain.
 - All classes have a `Class` ancestor.
 - `Class` inherits from `Module` which means every class is sort of a module. "Sort of" because unlike actual modules you can't mixin classes. `Module` adds in instantiation, properties etc to classes.
 
@@ -21,7 +22,7 @@ Method lookup in Rails is possible because of a few fields all Ruby objects, cla
 
 **classes, modules**
 - `m_tbl` (Method Table) - A hashtable containing all the class or module's instance methods.
-- `super` - A pointer to the class or module's superclass (_direct ancestor_). `Object` is always at the end of the `super` ancestor chain. _FYI, you can lookup the ancestors of a class by calling the `ancestors` method on that class._
+- `super` - A pointer to the class or module's superclass (_direct ancestor_). _You can lookup the ancestors of an object by calling the `ancestors` method on that object._
 
 ### How method lookup works
 
