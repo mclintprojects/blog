@@ -26,6 +26,6 @@ Method lookup in Rails is possible because of a few fields all Ruby objects, cla
 
 ### How method lookup works
 
-- Ruby follows the object's `class` pointer and check it's method table (`m_tbl`) for a match.
-- If there's no match, it follows the object's `super` pointer and checks it's method table for a match. Ruby continues up the `super` ancestor chain, looking into each ancestor's method table for a match.
+- Ruby follows the object's `class` pointer and checks its method table (`m_tbl`) for a match.
+- If there's no match, it follows the object's `super` pointer and checks its method table for a match. Ruby continues up the `super` ancestor chain, looking into each ancestor's method table for a match.
 - If there is still no match, Ruby invokes `method_missing` on the original object. FYI, `method_missing` is a method so it'll undergo this lookup process too until it is found and invoked.
