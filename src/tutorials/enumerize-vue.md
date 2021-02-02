@@ -71,6 +71,7 @@ What's happening here:
 - In `data`, I'm setting up the reactive `currentState` property that will be made accessible to the component. Setting the `currentState` is where the magic happens.
 
 ```vue
+  // Banks.vue
   <template>
     <div>
       <Loader v-if="loading" />
@@ -116,8 +117,8 @@ What's happening here:
 - My component has different views with their accompanying state.
   - A loader is shown when the state is `loading`
   - A list of banks is shown when the state is `loaded`
-  - An error message is shown when the state is `error`.
-- All the possible states for this component are defined in my `states` options array and the really simple state thing will set the first entry as the default. In this case, `loading` will be the state of the component until I transition away from it from setting `currentState` to a new state.
+  - An error message is shown when the state is `error`
+- All the possible states for this component are defined in my `states` options array and the really simple state thing will set the first entry as the default. In this case, `loading` will be the state of the component until I transition away from it by setting `currentState` to a new state.
 - In `getBanks`, I'm transitioning to the `loaded` state if I successfully get my list of banks or the `error` state if I don't.
 
 <content-break />
