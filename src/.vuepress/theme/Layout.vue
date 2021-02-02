@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss">
 :root {
-  --page-width: 35%;
+  --page-width: 40%;
   --bg: #ffffff;
   --text-primary: rgba(0, 0, 0, 1);
   --text-primary-light: rgba(0, 0, 0, 0.7);
@@ -52,11 +52,22 @@ export default {
   padding: 0;
 }
 
+@font-face{
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd.ttf");
+}
+
+@font-face{
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd-Bold.ttf");
+	font-weight: bold;
+}
+
 body {
   background: var(--bg);
   transition: all 500ms;
   color: var(--text-primary-light);
-  font-family: "Hind", sans-serif;
+  font-family: "CircularStd", sans-serif;
 }
 
 .page {
@@ -64,6 +75,10 @@ body {
   margin: auto;
   font-size: 1.6rem;
   margin-top: 3rem;
+}
+
+pre, code {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .content__default {
@@ -106,8 +121,7 @@ body {
     background: #171822;
     border-radius: 1rem;
     padding: 1.6rem;
-    font-family: "consolas";
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     white-space: pre-wrap;
     overflow: auto;
 
@@ -148,7 +162,6 @@ body {
 .content__default code {
   background: #171822;
   color: white;
-  font-family: "consolas";
   font-size: 1.2rem;
   padding: 0.2rem 0.8rem;
   border-radius: 0.3rem;
