@@ -29,19 +29,21 @@ Knock is a super easy to setup authentication gem for Rails applications based o
   end
   ```
 
+- You can use `Knock::AuthToken.new(payload: { id: user.id }).token` to generate a JWT for a user. To test that everything works, make a request to your protected controller with `Bearer #{JWT}` as it's Authorization header and you'll find that `current_user` is correctly set to the user you created the JWT for.
+
 ### FYI
 
 Users aren't the only entities you can authenticate. When you call `authenticate_user` as a `before_action`, what you're actually telling Knock with the suffix to `authenticate_` (in this case, `user`) is that you want to authenticate a `User` entity (read as ActiveRecord) for that controller.
 
 Knock gets the JWT from the request's `Authorization` header, decodes it and uses the `id` from the decoded payload to find the `User` for that token. It goes on to set a `current_user` instance variable for you. If the user it tried to find with the `id` from the decoded payload exists and the JWT isn't **expired** or **invalid**, calling `current_user` will return it and if it doesn't, `current_user` returns `nil`.
 
-This means that calling `current_business` as a `before_action` will authenticate a `Business` entity and set a `current_business` instance variable, available to you in your controller's actions.
+This means that calling `authenticate_business` as a `before_action` will authenticate a `Business` entity and set a `current_business` instance variable, available to you in your controller's actions.
 
 ## Getting Knock to work with GraphQL-Ruby
 
 Since Knock already handles getting the JWT from the request, decoding the token, and finding the entity for that token, all that's left to do is getting GraphQL to know who `current_user` is and that is where GraphQL's `context` comes in.
 
-Like the name suggests, GraphQL context allows us to inject helpful (application or request specific) "outside" information to the GraphQL execution flow. A common usecase for context is what we intend to do now –– passing the current user into the GraphQL request execution flow.
+Like the name suggests, GraphQL context allows us to inject helpful (application or request specific) "outside" information into the GraphQL execution flow. A common usecase for context is what we intend to do now –– passing the current user into the GraphQL request execution flow.
 
 To add the current user to your GraphQL context, in `graphql_controller.rb`, add `current` to the `context` hash defined in `execute`:
 ```ruby
