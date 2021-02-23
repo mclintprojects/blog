@@ -86,6 +86,10 @@ footer {
   border-top: 0.1rem solid var(--text-primary-light);
   padding-top: 3rem;
   padding-bottom: 3rem;
+  
+  p + a {
+    font-family: "CircularStd", sans-serif;
+  }
 
   div {
     padding-bottom: 3rem;

@@ -67,7 +67,6 @@ body {
   background: var(--bg);
   transition: all 500ms;
   color: var(--text-primary-light);
-  font-family: "CircularStd", sans-serif;
 }
 
 .page {
@@ -75,6 +74,11 @@ body {
   margin: auto;
   font-size: 1.6rem;
   margin-top: 3rem;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+
+  h1 {
+    font-family: "CircularStd", sans-serif;
+  }
 }
 
 pre, code {

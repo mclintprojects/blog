@@ -9,8 +9,15 @@ module.exports = {
 		[
 			'link',
 			{
+				rel: 'preconnect',
+				href: 'https://fonts.gstatic.com'
+			}
+		],
+		[
+			'link',
+			{
 				rel: 'stylesheet',
-				href: 'https://fonts.googleapis.com/css2?family=Hind:wght@400;500&display=swap'
+				href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap'
 			}
 		]
 	],
