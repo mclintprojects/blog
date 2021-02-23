@@ -48,6 +48,7 @@ export default {
       a {
         color: var(--text-primary-light);
         text-decoration: none;
+        font-family: "CircularStd", sans-serif;
 
         p:first-child {
           font-weight: bold;
