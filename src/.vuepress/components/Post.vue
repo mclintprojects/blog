@@ -48,9 +48,6 @@ export default {
       return `${readTime} ${readTime == 0 ? "mins" : "min"} read`;
     }
   },
-  mounted() {
-    console.log(this.$site);
-  }
 };
 </script>
 

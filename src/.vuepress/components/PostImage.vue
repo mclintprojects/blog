@@ -15,9 +15,6 @@ export default {
     align: { type: String, default: "center" },
     size: { type: String, default: "auto" }
   },
-  mounted() {
-    console.log("image mounted");
-  }
 };
 </script>
 
