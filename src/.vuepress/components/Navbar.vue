@@ -38,6 +38,7 @@ export default {
   align-items: center;
   margin: auto;
   font-family: "Inter", "Helvetica Neue", sans-serif;
+  width: var(--page-width);
 }
 
 label {
@@ -60,6 +61,13 @@ a img {
   font-size: 2.4rem;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Fugaz One";
   color: var(--text-primary);
+}
+
+@media screen and (max-device-width: 932px) {
+  .navbar {
+    width: 100%;
+  }
 }
 </style>

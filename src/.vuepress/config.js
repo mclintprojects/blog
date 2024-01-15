@@ -18,7 +18,7 @@ module.exports = {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css2?family=Fugaz+One:wght@700&family=Cousine:wght@400&display=swap",
+          "https://fonts.googleapis.com/css2?family=Fugaz+One:wght@400;700&family=Inter:wght@400&display=swap",
       },
     ],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],

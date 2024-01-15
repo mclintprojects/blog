@@ -38,6 +38,7 @@ export default {
 
 p {
   line-height: 140%;
+  font-family: "Inter" !important;
 }
 
 h1,
@@ -46,7 +47,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fugaz One", "Helvetica Neue", sans-serif;
+  font-family: "Fugaz One";
+  line-height: 140%;
 }
 
 body {
@@ -60,8 +62,7 @@ body {
   width: var(--page-width);
   margin: auto;
   font-size: 1.6rem;
-  margin-top: 6rem;
-  font-family: "Cousine", "Helvetica Neue", sans-serif;
+  margin: 6rem 0;
 }
 
 pre,

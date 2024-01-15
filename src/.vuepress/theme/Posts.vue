@@ -4,7 +4,7 @@
     <ul>
       <li v-for="(page, index) in pages" :key="index" class="post">
         <a :href="page.path">
-          <h3 class="post-title">{{ page.title }}</h3>
+          <p class="post-title">{{ page.title }}</p>
           <p class="post-publish-date">
             {{ getDate(page.frontmatter.published) }}
           </p>
@@ -19,7 +19,9 @@ export default {
   computed: {
     pages() {
       return this.$site.pages
-        .filter((page) => page.path.endsWith(".html"))
+        .filter(
+          (page) => page.path.endsWith(".html") && !page.frontmatter.route
+        )
         .sort(
           (page, next) =>
             new Date(next.frontmatter.published).getTime() -
@@ -31,6 +33,9 @@ export default {
     getDate(dateString) {
       return new Date(dateString).toDateString().substring(4);
     },
+  },
+  mounted() {
+    console.log(this.$site.pages);
   },
 };
 </script>
@@ -59,10 +64,12 @@ export default {
 
 .post-title {
   color: var(--text-primary);
+  font-weight: bold;
+  font-size: 2.4rem;
 }
 
 .post-publish-date {
-  color: var(--text-primary-light);
+  color: var(--text-primary);
   margin-top: 0.4rem;
   font-size: 1.4rem;
 }

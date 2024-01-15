@@ -15,10 +15,7 @@
       </div>
       <ul>
         <li>
-          <a href="https://mobile.twitter.com/mclint_">@mclint_</a>
-        </li>
-        <li>
-          <a href="https://www.clintonmbah.com">clintonmbah.com</a>
+          <a href="/">← Home</a>
         </li>
       </ul>
     </footer>
@@ -61,9 +58,10 @@ h1 {
 }
 
 h1 + p {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.4rem;
   margin-bottom: 3rem;
+  margin-top: 0.4rem;
+  color: var(--text-primary-light);
 }
 
 ul {
@@ -81,15 +79,58 @@ li ul {
   margin-left: 1.6rem;
 }
 
+.content__default h2,
+.content__default h3 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.content__default p {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.content__default code,
+.content__default pre {
+  font-size: 1.2rem;
+  background: rgb(226, 235, 237);
+  color: black;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-family: consolas;
+}
+
+.content__default pre span {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.content__default pre {
+  margin-top: 1.2rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 1.6rem;
+}
+
+.content__default pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.content__default code .token .keyword {
+  color: rgb(220, 55, 55) !important;
+}
+
 footer {
   margin-top: 6rem;
-  border-top: 0.1rem solid var(--text-primary-light);
+  border-top: 0.1rem solid rgb(219, 219, 219);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 footer p + a {
-  font-family: "CircularStd", sans-serif;
+  font-family: "Fugaz One", sans-serif;
 }
 
 footer div {
@@ -109,15 +150,16 @@ footer div p + a {
   color: var(--text-primary);
 }
 
-footer div p + a:hover {
-  text-decoration: underline;
-}
-
 footer ul {
   margin: 0;
   display: flex;
   justify-content: space-between;
   color: var(--text-primary);
   list-style: none !important;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
 }
 </style>
