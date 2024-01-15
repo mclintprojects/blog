@@ -35,7 +35,9 @@
         <p class="mt-2">
           I am fortunate to be spending most of my time on what I believe is my
           life's work — a startup that's building a
-          <a href="https://cashramp.co/commerce" target="_blank"
+          <a
+            href="https://blog.useaccrue.com/2023/06/09/the-accrue-master-plan/"
+            target="_blank"
             >USD-stablecoin agent network</a
           >
           for fast and cheap cross-border payments within Africa. Previously, I
