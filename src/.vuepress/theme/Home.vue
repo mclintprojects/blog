@@ -4,8 +4,11 @@
       <ul>
         <li v-for="(page, index) in pages" :key="index" class="article">
           <a :href="page.path">
-            <p>{{page.title}}</p>
-            <p>{{getDate(page.frontmatter.published)}} • {{getReadTimeLabel(page.frontmatter.readTime)}}</p>
+            <p>{{ page.title }}</p>
+            <p>
+              {{ getDate(page.frontmatter.published) }} •
+              {{ getReadTimeLabel(page.frontmatter.readTime) }}
+            </p>
           </a>
         </li>
       </ul>
@@ -18,13 +21,13 @@ export default {
   computed: {
     pages() {
       return this.$site.pages
-        .filter(page => page.path.endsWith(".html"))
+        .filter((page) => page.path.endsWith(".html"))
         .sort(
           (page, next) =>
             new Date(next.frontmatter.published).getTime() -
             new Date(page.frontmatter.published).getTime()
         );
-    }
+    },
   },
   methods: {
     getDate(dateString) {
@@ -32,40 +35,9 @@ export default {
     },
     getReadTimeLabel(readTime) {
       return `${readTime} ${readTime == 0 ? "mins" : "min"} read`;
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang="scss">
-.home {
-  ul {
-    list-style: none !important;
-
-    li {
-      margin-bottom: 3rem;
-
-      a {
-        color: var(--text-primary-light);
-        text-decoration: none;
-        font-family: "CircularStd", sans-serif;
-
-        p:first-child {
-          font-weight: bold;
-          color: var(--text-primary);
-          font-size: 3rem;
-
-          + p {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-          }
-        }
-      }
-
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-  }
-}
-</style>
+<style></style>

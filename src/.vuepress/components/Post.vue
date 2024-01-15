@@ -1,14 +1,17 @@
 <template>
   <div class="page">
-    <h1>{{$page.title}}</h1>
-    <p>{{getDate($page.frontmatter.published)}} &bull; {{getReadTimeLabel($page.frontmatter.readTime)}}</p>
+    <h1>{{ $page.title }}</h1>
+    <p>
+      {{ getDate($page.frontmatter.published) }} &bull;
+      {{ getReadTimeLabel($page.frontmatter.readTime) }}
+    </p>
 
     <Content />
 
     <footer>
       <div v-if="nextPost">
         <p>Now read this next</p>
-        <a :href="nextPost.path">{{nextPost.title}}</a>
+        <a :href="nextPost.path">{{ nextPost.title }}</a>
       </div>
       <ul>
         <li>
@@ -28,7 +31,7 @@ export default {
   computed: {
     pages() {
       return this.$site.pages
-        .filter(page => page.path.endsWith(".html"))
+        .filter((page) => page.path.endsWith(".html"))
         .sort(
           (page, next) =>
             new Date(next.frontmatter.published).getTime() -
@@ -36,9 +39,9 @@ export default {
         );
     },
     nextPost() {
-      const index = this.pages.findIndex(p => p.title == this.$page.title);
+      const index = this.pages.findIndex((p) => p.title == this.$page.title);
       return index + 1 > this.pages.length ? null : this.pages[index + 1];
-    }
+    },
   },
   methods: {
     getDate(dateString) {
@@ -46,12 +49,12 @@ export default {
     },
     getReadTimeLabel(readTime) {
       return `${readTime} ${readTime == 0 ? "mins" : "min"} read`;
-    }
+    },
   },
 };
 </script>
 
-<style lang="scss">
+<style>
 h1 {
   color: var(--text-primary);
   font-size: 3rem;
@@ -83,38 +86,38 @@ footer {
   border-top: 0.1rem solid var(--text-primary-light);
   padding-top: 3rem;
   padding-bottom: 3rem;
-  
-  p + a {
-    font-family: "CircularStd", sans-serif;
-  }
+}
 
-  div {
-    padding-bottom: 3rem;
+footer p + a {
+  font-family: "CircularStd", sans-serif;
+}
 
-    p {
-      text-transform: uppercase;
-      font-size: 1.1rem;
-      margin-bottom: 0.4rem;
-      color: var(--text-primary);
+footer div {
+  padding-bottom: 3rem;
+}
 
-      + a {
-        font-weight: bold;
-        font-size: 3rem;
-        color: var(--text-primary);
+footer div p {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+}
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
+footer div p + a {
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--text-primary);
+}
 
-  ul {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-primary);
-    list-style: none !important;
-  }
+footer div p + a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-primary);
+  list-style: none !important;
 }
 </style>

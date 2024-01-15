@@ -1,7 +1,7 @@
 <template>
   <div class="image">
-    <img :src="src" :alt="alt">
-    <small>{{caption}}</small>
+    <img :src="src" :alt="alt" />
+    <small>{{ caption }}</small>
   </div>
 </template>
 
@@ -13,27 +13,27 @@ export default {
     alt: { type: String, required: true },
     caption: { type: String, default: "" },
     align: { type: String, default: "center" },
-    size: { type: String, default: "auto" }
+    size: { type: String, default: "auto" },
   },
 };
 </script>
 
-<style lang="scss">
+<style>
 .image {
   width: 100%;
   text-align: center;
+}
 
-  img {
-    margin-top: 3rem;
-    max-width: var(--page-width);
-  }
+.image img {
+  margin-top: 3rem;
+  max-width: var(--page-width);
+}
 
-  small {
-    display: block;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-top: 0.8rem;
-  }
+.image small {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 0.8rem;
 }
 
 .img-center {

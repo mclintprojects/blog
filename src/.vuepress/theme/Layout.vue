@@ -31,13 +31,13 @@ export default {
       root.setProperty("--bg", "#ffffff");
       root.setProperty("--text-primary", "rgba(0, 0, 0, 0.8)");
       root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.7)");
-    }
+    },
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 
-<style lang="scss">
+<style>
 :root {
   --page-width: 40%;
   --bg: #ffffff;
@@ -52,15 +52,15 @@ export default {
   padding: 0;
 }
 
-@font-face{
-	font-family: "CircularStd";
-	src: url("/fonts/CircularStd.ttf");
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd.ttf");
 }
 
-@font-face{
-	font-family: "CircularStd";
-	src: url("/fonts/CircularStd-Bold.ttf");
-	font-weight: bold;
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd-Bold.ttf");
+  font-weight: bold;
 }
 
 body {
@@ -74,133 +74,16 @@ body {
   margin: auto;
   font-size: 1.6rem;
   margin-top: 3rem;
-  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
 
   h1 {
     font-family: "CircularStd", sans-serif;
   }
 }
 
-pre, code {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.content__default {
-  margin-top: 6rem;
-
-  a {
-    text-decoration: underline;
-  }
-
-  p,
-  h1,
-  h2,
-  h3,
-  pre,
-  ol {
-    margin-top: 3rem;
-  }
-
-  p,
-  li {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    word-wrap: break-word;
-  }
-
-  ol {
-    margin-left: 1.6rem;
-    font-size: 2rem;
-
-    li {
-      margin-bottom: 1.6rem;
-    }
-  }
-
-  strong {
-    color: var(--text-primary);
-  }
-
-  pre {
-    background: #171822;
-    border-radius: 1rem;
-    padding: 1.6rem;
-    font-size: 1.3rem;
-    white-space: pre-wrap;
-    overflow: auto;
-
-    code {
-      background: none;
-      color: rgb(188, 212, 210);
-      padding: 0;
-
-      .tag,
-      .keyword,
-      .operator {
-        color: #abbdc9;
-      }
-
-      .attr-name,
-      .function,
-      .constant {
-        color: #2f97b1;
-      }
-
-      .punctuation,
-      .class-name {
-        color: rgb(130, 238, 252);
-      }
-
-      .symbol {
-        color: #b6e5fa;
-      }
-
-      .comment {
-        font-style: italic;
-        color: rgba(255, 255, 255, 0.54);
-      }
-    }
-  }
-}
-
-.content__default code {
-  background: #171822;
-  color: white;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.8rem;
-  border-radius: 0.3rem;
-}
-
-a {
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-@media screen and (max-width: 48rem) {
-  :root {
-    --page-width: 100%;
-  }
-
-  body {
-    padding: 0 1.6rem;
-  }
-
-  ul {
-    margin-left: 1.6rem;
-  }
-
-  .content__default {
-    pre {
-      white-space: pre;
-      code {
-        font-size: 1.3rem;
-      }
-    }
-
-    p,
-    li {
-      font-size: 1.8rem;
-    }
-  }
+pre,
+code {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 </style>
