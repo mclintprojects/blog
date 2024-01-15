@@ -40,7 +40,7 @@ export default {
 
 p {
   line-height: 160%;
-  font-family: "Inter" !important;
+  font-family: "Inter";
   color: var(--text-primary);
 }
 
@@ -57,22 +57,13 @@ h6 {
 
 body {
   background: var(--bg);
-  transition: all 500ms;
-  color: var(--text-primary-light);
+  color: var(--text-primary);
   padding: 100px 24px 0 24px;
 }
 
 .page {
   width: var(--page-width);
-  margin: auto;
-  font-size: 1.6rem;
   margin: 6rem auto;
-}
-
-pre,
-code {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .mt-2 {
