@@ -10,7 +10,7 @@
 
     <footer>
       <div v-if="nextPost">
-        <p>Now read this next</p>
+        <p>Up next for you</p>
         <a :href="nextPost.path">{{ nextPost.title }}</a>
       </div>
       <ul>
@@ -70,13 +70,18 @@ ul {
   margin-left: 3.2rem;
 }
 
-ul li {
-  margin-bottom: 1rem;
-}
-
 li ul {
   margin-top: 0rem !important;
   margin-left: 1.6rem;
+}
+
+ol {
+  font-family: "Fugaz One";
+  margin-left: 1.6rem;
+}
+
+a.header-anchor {
+  color: black;
 }
 
 .content__default h2,
@@ -85,30 +90,55 @@ li ul {
   margin-bottom: 1.6rem;
 }
 
-.content__default p {
-  margin-top: 1.6rem;
-  font-size: 1.8rem;
+ul li,
+.content__default p,
+aside {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  font-family: "Inter";
+  line-height: 160%;
+}
+
+ul li {
+  margin-top: 1rem;
+}
+
+aside {
+  background: hsl(129, 90%, 95%);
+  padding: 1.6rem;
+  margin-top: 0;
+  border-radius: 0.8rem;
+  color: hsl(129, 90%, 38%);
+  font-size: 1.4rem;
+}
+
+hr {
+  margin: 6rem auto;
+}
+
+.content__default em {
+  background: rgb(234, 234, 234);
 }
 
 .content__default code,
 .content__default pre {
   font-size: 1.2rem;
-  background: rgb(226, 235, 237);
+  background: rgb(238, 244, 246);
   color: black;
   padding: 4px 10px;
   border-radius: 8px;
-  font-family: consolas;
+  font-family: apple-system, consolas, sans-serif;
+  white-space: pre-wrap;
 }
 
 .content__default pre span {
-  overflow-wrap: break-word;
+  word-wrap: break-word;
   word-break: break-all;
 }
 
 .content__default pre {
   margin-top: 1.2rem;
   width: 100%;
-  overflow-x: scroll;
   padding: 1.6rem;
 }
 
@@ -120,6 +150,31 @@ li ul {
 
 .content__default code .token .keyword {
   color: rgb(220, 55, 55) !important;
+}
+
+.tag,
+.keyword,
+.operator {
+  color: #1470ad;
+}
+
+.attr-name,
+.function,
+.constant {
+  color: #2e24e8;
+}
+
+.punctuation,
+.class-name {
+  color: rgb(247, 72, 72);
+}
+
+.symbol {
+  color: rgb(44, 198, 27);
+}
+.comment {
+  font-style: italic;
+  color: rgba(38, 38, 38, 0.678);
 }
 
 footer {
@@ -161,5 +216,6 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: black;
+  font-family: "Inter";
 }
 </style>

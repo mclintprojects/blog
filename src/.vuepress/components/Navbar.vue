@@ -9,7 +9,9 @@
         href="/posts"
         :style="{
           'text-decoration':
-            $frontmatter.route == 'posts' ? 'underline' : 'none',
+            $page.path.startsWith('/posts') || $frontmatter.route == 'posts'
+              ? 'underline'
+              : 'none',
         }"
         >posts</a
       >
@@ -28,6 +30,9 @@
 <script>
 export default {
   name: "Navbar",
+  mounted() {
+    console.log(this.$page);
+  },
 };
 </script>
 

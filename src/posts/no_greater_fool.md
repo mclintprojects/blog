@@ -4,7 +4,7 @@ published: 10/07/2023
 readTime: 7
 ---
 
-When an adult who should know better puts their arm into an open flame and gets badly burnt, we don’t conclude that fire has no redeeming qualities. As such, when investors who should know better make bad bets and get badly burnt, we should not conclude that our nascent tech ecosystem is irredeemably fraudulent.
+When an adult who should know better puts their arm into an open flame and gets badly burnt, we don’t conclude that fire has no redeeming qualities. As such, when investors who should know better make bad bets and get badly burnt, we should not conclude instead that our nascent tech ecosystem is irredeemably fraudulent.
 
 Our ecosystem is largely made up of upright founders using technology to solve hard, ambitious problems that will culminate in a future we can all look forward to. We must not entertain the attempt to extrapolate the failings of a few people as an ecosystem-wide malaise. Neither must we entertain that founders have consequences (less international funding, unnecessarily tedious due diligence, etc.) to bear, seeing as great founders & investors have never shied away from a metrics deep dive, oversight, audits, or sufficiently rigorous due diligence.
 

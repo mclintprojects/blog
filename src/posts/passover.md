@@ -14,9 +14,8 @@ Here's the modest investment strategy that has me unbothered about the bloodbath
     - My ratio is **70%** stablecoin/USD savings and **30%** investments.
     - I hold **very little** local currency (GHS, NGN etc.) for day-to-day upkeep.
     
-    <aside>
+    <aside class="mt-2">
     🔑 Keeping a large chunk of your wealth in an ever-weakening currency means you're performing a wealth transfer to thieving politicians. Funny enough, they don't make the same mistake because they immediately siphon their proceeds to stronger currencies offshore.
-    
     </aside>
     
 2. Weekly DCA of **only** blue-chip assets (e.g. BTC, ETH, MATIC, VOO, SPY, AAPL, MSFT, META, GOOG).

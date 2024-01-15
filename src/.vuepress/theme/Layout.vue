@@ -37,7 +37,7 @@ export default {
 }
 
 p {
-  line-height: 140%;
+  line-height: 160%;
   font-family: "Inter" !important;
 }
 

@@ -4,9 +4,9 @@ published: 12/25/2023
 readTime: 10
 ---
 
-I've [mentioned](https://www.notion.so/Startup-Lessons-02b445d7d9bc4ac5a7470cf55ef68a16?pvs=21) quite often that one of the most important ingredients of doing hard things (like startups) is “delusion”. I've come to realize it could be better described as **faith**.
+I've [mentioned](/posts/startup_lessons) quite often that one of the most important ingredients of doing hard things (like startups) is “delusion”. I've come to realize it could be better described as **faith**.
 
-"*We're gardeners, not gods. We cannot make things happen. Every good thing has its own season for ripening, and half the time, something unexpected happens.” — Elaine.*
+"*We're gardeners, not gods. We cannot make things happen. Every good thing has its own season for ripening, and half the time, something unexpected happens.” — Elaine Wang.*
 
 One part of undertaking hard things is a significant amount of willpower & influence — you're gardening, aka wielding what's in your control to pave the way for the emergence of your desired outcomes. For this part of the journey, your influence — whether through out-of-the-box thinking, a sense of urgency, connections, or sheer hard work — propels you toward your desired state. 
 
