@@ -4,9 +4,7 @@
       <div>
         <img class="selfie" src="/images/selfie-large.png" />
         <h1>Clinton "Anwu" Mbah</h1>
-        <p>
-          Accra, Ghana 🇬🇭 &bull; The Internet
-        </p>
+        <p>Accra, Ghana 🇬🇭 &bull; The Internet</p>
         <ul class="introduction-socials">
           <li>
             <a href="twitter.com/mclint_">Twitter</a>
@@ -31,16 +29,14 @@
           impactful consumer products.
         </p>
         <p class="mt-2">
-          I currently spend most of my time making progress on my
-          <a href="https://useaccrue.com">life's work</a> — a startup building a
-          stablecoin
-          <a href="https://cashramp.co/commerce">agent network</a> for fast and
-          cheap cross-border payments within Africa.
-        </p>
-        <p class="mt-2">
-          By the end of this decade, my personal mission is to deliver the most
-          delightful way for Africans to access all the utility available to
-          them in crypto.
+          I feel incredibly fortunate to be spending most of my time on what I
+          believe is my life's work — a startup that's building a
+          <a href="https://cashramp.co/commerce"
+            >USD-stablecoin agent network</a
+          >
+          for fast and cheap cross-border payments within Africa. Previously, I
+          worked at <a href="https://helicarrier.studio">Helicarrier</a> on a
+          range of consumer crypto products.
         </p>
         <p class="mt-2">
           I'm insatiably curious about technology, startups, crypto, art, games,
