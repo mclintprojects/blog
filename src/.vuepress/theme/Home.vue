@@ -7,16 +7,20 @@
         <p>Accra, Ghana 🇬🇭 &bull; The Internet</p>
         <ul class="introduction-socials">
           <li>
-            <a href="twitter.com/mclint_">Twitter</a>
+            <a href="twitter.com/mclint_" target="_blank">Twitter</a>
           </li>
           <li>
-            <a href="https://github.com/mclintprojects">GitHub</a>
+            <a href="https://github.com/mclintprojects" target="_blank"
+              >GitHub</a
+            >
           </li>
           <li>
-            <a href="https://vsco.co/mclint">VSCO</a>
+            <a href="https://vsco.co/mclint" target="_blank">VSCO</a>
           </li>
           <li>
-            <a href="https://www.inprnt.com/gallery/mclint/">Inprnt</a>
+            <a href="https://www.inprnt.com/gallery/mclint/" target="_blank"
+              >Inprnt</a
+            >
           </li>
           <li>
             <a href="mailto:clintonmbah44@gmail.com">Email</a>
@@ -29,14 +33,15 @@
           impactful consumer products.
         </p>
         <p class="mt-2">
-          I feel incredibly fortunate to be spending most of my time on what I
-          believe is my life's work — a startup that's building a
-          <a href="https://cashramp.co/commerce"
+          I am fortunate to be spending most of my time on what I believe is my
+          life's work — a startup that's building a
+          <a href="https://cashramp.co/commerce" target="_blank"
             >USD-stablecoin agent network</a
           >
           for fast and cheap cross-border payments within Africa. Previously, I
-          worked at <a href="https://helicarrier.studio">Helicarrier</a> on a
-          range of consumer crypto products.
+          worked at
+          <a href="https://helicarrier.studio" target="_blank">Helicarrier</a>
+          on a range of consumer crypto products.
         </p>
         <p class="mt-2">
           I'm insatiably curious about technology, startups, crypto, art, games,
