@@ -32,19 +32,18 @@
           music.
         </p>
         <p class="mt-2">
-          I spend most of my time on
+          I spend most of my time working on
           <a href="https://useaccrue.com">Accrue</a>. We're building
-          <a href="https://cashramp.co">Cashramp</a> — a continent-wide
+          <a href="https://cashramp.co/commerce">Cashramp</a> — a continent-wide
           stablecoin agent network for fast and cheap cross-border payments
-          within Africa. I think it'll be a game-changer for African
+          within Africa. I'm convinced that it'll be a game-changer for African
           cross-border commerce by the end of this decade.
         </p>
         <p class="mt-2">
-          In my free time, I enjoy writing about things I'm ruminating on,
-          reading essays (science, business, technology, productivity, life, and
-          love), (auto) biographies, and (non) fiction novels. You can also find
-          me working on small apps & games or painting portraitures in
-          Procreate.
+          In my free time, I'm usually writing about things I'm ruminating on or
+          reading essays, biographies, and novels. You can also find me playing
+          video games, working on small, personal apps & games or painting
+          portraits in Procreate.
         </p>
       </div>
     </div>
