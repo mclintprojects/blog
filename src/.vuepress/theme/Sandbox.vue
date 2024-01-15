@@ -33,8 +33,7 @@ export default {
           name: "ideabag 2",
           description:
             "Ideas for projects to work on as you learn a new programming language",
-          url:
-            "https://play.google.com/store/apps/details?id=com.alansa.ideabag2",
+          url: "https://play.google.com/store/apps/details?id=com.alansa.ideabag2",
         },
         {
           name: "actioncable-vue",
@@ -45,8 +44,7 @@ export default {
         {
           name: "chattabox",
           description: "Fun shout-it-out game for players of all ages.",
-          url:
-            "https://play.google.com/store/apps/details?id=com.alansa.chattabox",
+          url: "https://play.google.com/store/apps/details?id=com.alansa.chattabox",
         },
         {
           name: "rlox (WIP)",
@@ -86,6 +84,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
 }
 
 .project a div {
