@@ -1,46 +1,43 @@
 <template>
   <div class="navbar">
     <a href="/">
-      <img :src="$withBase('/selfie.svg')" alt="logo">
+      <img :src="$withBase('/selfie.png')" alt="logo" />
     </a>
 
-    <div class="mode">
-      <button @click="changeMode('light')" :class="{selected: mode == 'light'}">Light</button>
-      <button @click="changeMode('dark')" :class="{selected: mode == 'dark'}">Dark</button>
-    </div>
+    <ul class="nav-links">
+      <a
+        href="/posts"
+        :style="{
+          'text-decoration':
+            $frontmatter.route == 'posts' ? 'underline' : 'none',
+        }"
+        >posts</a
+      >
+      <a
+        href="/projects"
+        :style="{
+          'text-decoration':
+            $frontmatter.route == 'projects' ? 'underline' : 'none',
+        }"
+        >projects</a
+      >
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
   name: "Navbar",
-  data() {
-    return {
-      mode: "light"
-    };
-  },
-  methods: {
-    changeMode(mode) {
-      this.mode = mode;
-      this.$emit("modechange", mode);
-    }
-  },
-  mounted() {
-    const mode = localStorage.getItem("mode");
-    if (mode) this.changeMode(mode);
-  }
 };
 </script>
 
 <style scoped>
 .navbar {
-  color: var(--primary-color);
+  color: var(--text-primary);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: var(--page-width);
   margin: auto;
-  padding: 1.6rem 0;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
 }
 
 label {
@@ -48,36 +45,21 @@ label {
 }
 
 a img {
-  width: 4rem;
-  margin-right: 1.6rem;
+  width: 3.6rem;
+  margin-right: 2.4rem;
 }
 
-.mode {
+.nav-links {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
-.mode input[type="checkbox"] {
-  margin-right: 0.8rem;
-}
-
-button {
-  border: 0.1rem solid var(--text-primary);
-  background: var(--bg);
-  color: var(--text-primary);
-  text-transform: lowercase;
-  padding: 0.4rem 0.8rem;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-button:first-child {
-  border-right: none;
-}
-
-button.selected {
+.nav-links a {
+  margin-right: 3.2rem;
+  font-size: 2.4rem;
+  text-decoration: none;
   font-weight: bold;
+  color: var(--text-primary);
 }
 </style>
