@@ -34,9 +34,6 @@ export default {
       return new Date(dateString).toDateString().substring(4);
     },
   },
-  mounted() {
-    console.log(this.$site.pages);
-  },
 };
 </script>
 

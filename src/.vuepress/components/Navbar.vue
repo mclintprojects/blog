@@ -13,15 +13,15 @@
               ? 'underline'
               : 'none',
         }"
-        >posts</a
+        >writing</a
       >
       <a
-        href="/projects"
+        href="/sandbox"
         :style="{
           'text-decoration':
-            $frontmatter.route == 'projects' ? 'underline' : 'none',
+            $frontmatter.route == 'sandbox' ? 'underline' : 'none',
         }"
-        >projects</a
+        >sandbox</a
       >
     </ul>
   </div>
