@@ -3,7 +3,7 @@ const baseUrl = "clintonmbah.com";
 module.exports = {
   title: "Clinton Mbah",
   description:
-    "Full-stack software engineer specializing in web and mobile applications. Kotlin/Android, JavaScript/Vue/Node, and Ruby/Rails 5.",
+    "Computer programmer currently focused on building delightful and impactful consumer products.",
   head: [
     ["link", { rel: "icon", href: `/selfie.png` }],
     [
@@ -17,8 +17,7 @@ module.exports = {
       "link",
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Fugaz+One:wght@400;700&family=Inter:wght@400&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fugaz+One:wght@400;700&family=Inter:wght@400&display=swap",
       },
     ],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
