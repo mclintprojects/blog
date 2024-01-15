@@ -47,11 +47,11 @@
         </p>
         <p class="mt-2">
           I'm insatiably curious about technology, startups, crypto, art, games,
-          and music. In my free time, I'm usually writing about things I'm
-          ruminating on or reading articles, essays, biographies, and novels.
-          You might also find me exploring photography as a hobby, vibing to
-          Amapiano/EDM/House/OSTs, playing video games, working on personal
-          products & games or painting portraits in Procreate.
+          and music. In my free time, I'm usually reading articles, essays,
+          biographies, and novels. You might also find me dabbling in
+          photography as a hobby, vibing to RnB/Amapiano/EDM/House/OSTs songs,
+          playing video games, working on personal projects or painting
+          portraits in Procreate.
         </p>
       </div>
     </div>
