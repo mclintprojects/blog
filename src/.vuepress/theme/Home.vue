@@ -2,10 +2,10 @@
   <div class="home page">
     <div class="introduction">
       <div>
+        <img class="selfie" src="/images/selfie-large.png" />
         <h1>Clinton "Anwu" Mbah</h1>
         <p>
-          I'm a programmer that *really likes* design. Also: hobbyist
-          photographer & digital portrait artist. &bull; 🇬🇭
+          Accra, Ghana 🇬🇭 &bull; The Internet
         </p>
         <ul class="introduction-socials">
           <li>
@@ -27,23 +27,28 @@
       </div>
       <div class="about-me">
         <p>
-          I love designing and building delightful consumer products. I'm also
-          insatiably curious about crypto, art, games, sci-fi anything, and
-          music.
+          I'm a computer programmer currently focused on building delightful &
+          impactful consumer products.
         </p>
         <p class="mt-2">
-          I spend most of my time working on
-          <a href="https://useaccrue.com">Accrue</a>. We're building
-          <a href="https://cashramp.co/commerce">Cashramp</a> — a continent-wide
-          stablecoin agent network for fast and cheap cross-border payments
-          within Africa. I'm convinced that it'll be a game-changer for African
-          cross-border commerce by the end of this decade.
+          I currently spend most of my time making progress on my
+          <a href="https://useaccrue.com">life's work</a> — a startup building a
+          stablecoin
+          <a href="https://cashramp.co/commerce">agent network</a> for fast and
+          cheap cross-border payments within Africa.
         </p>
         <p class="mt-2">
-          In my free time, I'm usually writing about things I'm ruminating on or
-          reading essays, biographies, and novels. You can also find me playing
-          video games, working on small, personal apps & games or painting
-          portraits in Procreate.
+          By the end of this decade, my personal mission is to deliver the most
+          delightful way for Africans to access all the utility available to
+          them in crypto.
+        </p>
+        <p class="mt-2">
+          I'm insatiably curious about technology, startups, crypto, art, games,
+          and music. In my free time, I'm usually writing about things I'm
+          ruminating on or reading articles, essays, biographies, and novels.
+          You might also find me exploring photography as a hobby, vibing to
+          Amapiano/EDM/House/OSTs, playing video games, working on personal
+          products & games or painting portraits in Procreate.
         </p>
       </div>
     </div>
@@ -55,11 +60,17 @@ export default {};
 </script>
 
 <style>
+.selfie {
+  height: 150px;
+  margin-bottom: 1.2rem;
+  border-radius: 1.6rem;
+}
+
 .introduction h1 + p {
   text-transform: none;
   font-size: 1.4rem;
-  margin-top: 0.4rem;
-  margin-bottom: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .introduction-socials {
@@ -85,7 +96,7 @@ export default {};
 
 .about-me p {
   color: var(--text-primary);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .about-me p a {

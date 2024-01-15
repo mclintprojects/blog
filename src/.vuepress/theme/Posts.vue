@@ -48,9 +48,9 @@ export default {
 
 .posts ul li {
   list-style-type: none;
-  margin-bottom: 2.4rem;
-  border-bottom: 1px solid rgb(230, 230, 230);
-  padding-bottom: 2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  padding-bottom: 1.6rem;
 }
 
 .posts ul li:last-child {
@@ -65,12 +65,12 @@ export default {
 .post-title {
   color: var(--text-primary);
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
 .post-publish-date {
   color: var(--text-primary);
-  margin-top: 0.4rem;
-  font-size: 1.4rem;
+  margin-top: 0;
+  font-size: 1.2rem;
 }
 </style>

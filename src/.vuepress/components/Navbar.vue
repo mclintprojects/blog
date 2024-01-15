@@ -63,7 +63,7 @@ a img {
 
 .nav-links a {
   margin-right: 3.2rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-decoration: none;
   font-weight: bold;
   font-family: "Fugaz One";

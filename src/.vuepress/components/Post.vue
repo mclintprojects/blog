@@ -60,7 +60,7 @@ h1 {
 h1 + p {
   font-size: 1.4rem;
   margin-bottom: 3rem;
-  margin-top: 0.4rem;
+  margin-top: 0;
   color: var(--text-primary-light);
 }
 
