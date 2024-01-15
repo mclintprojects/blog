@@ -1,7 +1,8 @@
 <template>
   <div>
-    <navbar @modechange="modeChanged"></navbar>
-    <home v-if="$page.frontmatter.home" />
+    <navbar></navbar>
+    <home v-if="$page.frontmatter.route == 'home'" />
+    <posts v-else-if="$page.frontmatter.route == 'posts'" />
     <post v-else />
   </div>
 </template>
@@ -9,31 +10,14 @@
 <script>
 import Home from "./Home";
 import Post from "../components/Post";
+import Posts from "./Posts";
 import Navbar from "../components/Navbar";
 
 export default {
-  components: { Home, Navbar, Post },
-  methods: {
-    modeChanged(mode) {
-      if (mode == "dark") this.switchToDark();
-      else this.switchToLight();
-
-      localStorage.setItem("mode", mode);
-    },
-    switchToDark() {
-      const root = document.documentElement.style;
-      root.setProperty("--bg", "#000000");
-      root.setProperty("--text-primary", "white");
-      root.setProperty("--text-primary-light", "rgba(255, 255, 255, 0.7)");
-    },
-    switchToLight() {
-      const root = document.documentElement.style;
-      root.setProperty("--bg", "#ffffff");
-      root.setProperty("--text-primary", "rgba(0, 0, 0, 0.8)");
-      root.setProperty("--text-primary-light", "rgba(0, 0, 0, 0.7)");
-    },
+  components: { Home, Navbar, Posts, Post },
+  mounted() {
+    console.log(this);
   },
-  mounted() {},
 };
 </script>
 
@@ -42,7 +26,7 @@ export default {
   --page-width: 40%;
   --bg: #ffffff;
   --text-primary: rgba(0, 0, 0, 1);
-  --text-primary-light: rgba(0, 0, 0, 0.7);
+  --text-primary-light: rgba(0, 0, 0, 0.84);
   font-size: 62.5%;
 }
 
@@ -52,38 +36,51 @@ export default {
   padding: 0;
 }
 
-@font-face {
-  font-family: "CircularStd";
-  src: url("/fonts/CircularStd.ttf");
+p {
+  line-height: 140%;
 }
 
-@font-face {
-  font-family: "CircularStd";
-  src: url("/fonts/CircularStd-Bold.ttf");
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fugaz One", "Helvetica Neue", sans-serif;
 }
 
 body {
   background: var(--bg);
   transition: all 500ms;
   color: var(--text-primary-light);
+  padding: 100px 24px 0 24px;
 }
 
 .page {
   width: var(--page-width);
   margin: auto;
   font-size: 1.6rem;
-  margin-top: 3rem;
-  font-family: "Inter", "Helvetica Neue", sans-serif;
-
-  h1 {
-    font-family: "CircularStd", sans-serif;
-  }
+  margin-top: 6rem;
+  font-family: "Cousine", "Helvetica Neue", sans-serif;
 }
 
 pre,
 code {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mt-2 {
+  margin-top: 1.6rem;
+}
+
+@media screen and (max-device-width: 932px) {
+  body {
+    padding: 24px 24px 0 24px;
+  }
+
+  .page {
+    width: 100%;
+  }
 }
 </style>
