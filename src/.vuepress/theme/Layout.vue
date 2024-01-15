@@ -23,7 +23,7 @@ export default {
 
 <style>
 :root {
-  --page-width: 40%;
+  --page-width: 30%;
   --bg: #ffffff;
   --text-primary: rgba(0, 0, 0, 1);
   --text-primary-light: rgba(0, 0, 0, 0.84);
@@ -62,7 +62,7 @@ body {
   width: var(--page-width);
   margin: auto;
   font-size: 1.6rem;
-  margin: 6rem 0;
+  margin: 6rem auto;
 }
 
 pre,
