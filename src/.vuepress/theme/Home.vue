@@ -72,6 +72,7 @@ export default {};
   font-size: 1.4rem;
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--text-primary);
 }
 
 .introduction-socials {

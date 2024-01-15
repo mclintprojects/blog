@@ -18,9 +18,9 @@ You’re somehow in one of the trimodal states and all of them simultaneously.
 
 I started writing this just now, did some more introspection, and this seems to be the takeaway, especially for my current quandaries:
 
-- I’ll be just fine. [I am in the throes](https://www.notion.so/You-re-in-the-throes-b471ae68a9f04e99977f7f8f0ae74da7?pvs=21) right now. I need to take a breather and remind myself that this is the better future I once used to dream about, and like I’ve done several times, I’ll figure out my new present and progress to yet another better future.
+- I’ll be just fine. [I am in the throes](/posts/youre_in_the_throes) right now. I need to take a breather and remind myself that this is the better future I once used to dream about, and like I’ve done several times, I’ll figure out my new present and progress to yet another better future.
 - For now, I need to diligently chip at my quandaries with solutions, no matter how tiny. Little by little, and then all at once, they’ll unravel.
 
 ---
 
-*Lmfao. Writing this out actually reassured me that I’ll figure out my quandaries (hint: **startups hard die**). I’ll be fine. If you’re in a similar situation, rest assured, you’ll be fine too :)*
+_Lmfao. Writing this out actually reassured me that I’ll figure out my quandaries (hint: **startups hard die**). I’ll be fine. If you’re in a similar situation, rest assured, you’ll be fine too :)_
