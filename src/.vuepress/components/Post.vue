@@ -78,6 +78,7 @@ li ul {
 ol {
   font-family: "Fugaz One";
   margin-left: 1.6rem;
+  margin-top: 1.6rem;
 }
 
 a.header-anchor {
@@ -91,12 +92,14 @@ a.header-anchor {
 }
 
 ul li,
+ol li,
 .content__default p,
 aside {
   margin-top: 2.4rem;
   font-size: 1.6rem;
   font-family: "Inter";
   line-height: 160%;
+  color: var(--text-primary);
 }
 
 ul li {
@@ -110,6 +113,15 @@ aside {
   border-radius: 0.8rem;
   color: hsl(129, 90%, 38%);
   font-size: 1.4rem;
+}
+
+blockquote {
+  padding-left: 1.6rem;
+  border-left: 3px solid black;
+}
+
+blockquote p {
+  color: var(--text-primary-light);
 }
 
 hr {

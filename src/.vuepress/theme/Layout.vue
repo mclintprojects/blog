@@ -25,8 +25,8 @@ export default {
 :root {
   --page-width: 30%;
   --bg: #ffffff;
-  --text-primary: rgba(0, 0, 0, 1);
-  --text-primary-light: rgba(0, 0, 0, 0.84);
+  --text-primary: rgba(0, 0, 0, 8);
+  --text-primary-light: rgba(0, 0, 0, 0.54);
   font-size: 62.5%;
 }
 
@@ -39,6 +39,7 @@ export default {
 p {
   line-height: 160%;
   font-family: "Inter" !important;
+  color: var(--text-primary);
 }
 
 h1,
@@ -49,6 +50,7 @@ h5,
 h6 {
   font-family: "Fugaz One";
   line-height: 140%;
+  color: var(--text-primary);
 }
 
 body {
