@@ -7,7 +7,7 @@
         <p>Accra, Ghana 🇬🇭 &bull; The Internet</p>
         <ul class="introduction-socials">
           <li>
-            <a href="twitter.com/mclint_" target="_blank">Twitter</a>
+            <a href="https://twitter.com/mclint_" target="_blank">Twitter</a>
           </li>
           <li>
             <a href="https://github.com/mclintprojects" target="_blank"
@@ -33,7 +33,7 @@
           impactful consumer products.
         </p>
         <p class="mt-2">
-          I am fortunate to be spending most of my time on what I believe is my
+          I am fortunate to be spending most of my time on what feels like my
           life's work — a startup that's building a
           <a
             href="https://blog.useaccrue.com/2023/06/09/the-accrue-master-plan/"
@@ -49,9 +49,9 @@
           I'm insatiably curious about technology, startups, crypto, art, games,
           and music. In my free time, I'm usually reading articles, essays,
           biographies, and novels. You might also find me dabbling in
-          photography as a hobby, vibing to RnB/Amapiano/EDM/House/OSTs songs,
-          playing video games, working on personal projects or painting
-          portraits in Procreate.
+          photography as a hobby, vibing to RnB/Amapiano/EDM/House/OSTs, playing
+          video games, working on personal projects or painting portraits in
+          Procreate.
         </p>
       </div>
     </div>

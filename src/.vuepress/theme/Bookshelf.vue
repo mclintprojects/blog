@@ -3,7 +3,7 @@
     <h1>Bookshelf</h1>
     <ul>
       <li v-for="(book, index) in books" :key="index">
-        <a :href="book.link">{{ book.title }}</a>
+        <a :href="book.link" target="_blank">{{ book.title }}</a>
       </li>
     </ul>
   </div>
