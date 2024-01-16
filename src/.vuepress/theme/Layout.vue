@@ -3,6 +3,7 @@
     <navbar></navbar>
     <home v-if="$page.frontmatter.route == 'home'" />
     <posts v-else-if="$page.frontmatter.route == 'posts'" />
+    <bookshelf v-else-if="$page.frontmatter.route == 'bookshelf'" />
     <sandbox v-else-if="$page.frontmatter.route == 'sandbox'" />
     <post v-else />
   </div>
@@ -12,11 +13,12 @@
 import Home from "./Home";
 import Post from "../components/Post";
 import Posts from "./Posts";
+import Bookshelf from "./Bookshelf";
 import Sandbox from "./Sandbox";
 import Navbar from "../components/Navbar";
 
 export default {
-  components: { Home, Navbar, Posts, Post, Sandbox },
+  components: { Home, Navbar, Posts, Post, Bookshelf, Sandbox },
   mounted() {
     console.log(this);
   },

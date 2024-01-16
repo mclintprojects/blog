@@ -16,6 +16,14 @@
         >writing</a
       >
       <a
+        href="/bookshelf"
+        :style="{
+          'text-decoration':
+            $frontmatter.route == 'bookshelf' ? 'underline' : 'none',
+        }"
+        >bookshelf</a
+      >
+      <a
         href="/sandbox"
         :style="{
           'text-decoration':
@@ -51,8 +59,8 @@ label {
 }
 
 a img {
-  width: 3.6rem;
-  margin-right: 2.4rem;
+  width: 2.4rem;
+  margin-right: 2rem;
 }
 
 .nav-links {
@@ -62,8 +70,8 @@ a img {
 }
 
 .nav-links a {
-  margin-right: 3.2rem;
-  font-size: 2rem;
+  margin-right: 2rem;
+  font-size: 1.8rem;
   text-decoration: none;
   font-weight: bold;
   font-family: "Fugaz One";
