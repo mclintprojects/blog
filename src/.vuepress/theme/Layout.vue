@@ -19,9 +19,6 @@ import Navbar from "../components/Navbar";
 
 export default {
   components: { Home, Navbar, Posts, Post, Bookshelf, Sandbox },
-  mounted() {
-    console.log(this);
-  },
 };
 </script>
 

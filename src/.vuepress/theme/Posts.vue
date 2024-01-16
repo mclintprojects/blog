@@ -66,8 +66,7 @@ export default {
 }
 
 .post-publish-date {
-  color: var(--text-primary);
+  color: var(--text-primary-light);
   margin-top: 0;
-  font-size: 1.2rem;
 }
 </style>

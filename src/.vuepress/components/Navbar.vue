@@ -38,9 +38,6 @@
 <script>
 export default {
   name: "Navbar",
-  mounted() {
-    console.log(this.$page);
-  },
 };
 </script>
 
