@@ -4,15 +4,10 @@
     <ul>
       <li v-for="(project, index) in projects" :key="index" class="project">
         <a :href="project.url" target="_blank">
-          <div>
-            <p class="project-name">
-              {{ project.name }}
-            </p>
-            <p class="project-description">
-              {{ project.description }}
-            </p>
-          </div>
-          <span>&rarr;</span>
+          <p class="project-name">{{ project.name }} <span>&rarr;</span></p>
+          <p class="project-description">
+            {{ project.description }}
+          </p>
         </a>
       </li>
     </ul>
@@ -81,9 +76,6 @@ export default {
 }
 
 .project a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: black;
 }
 
