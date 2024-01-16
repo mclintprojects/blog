@@ -1,6 +1,10 @@
 <template>
   <div class="bookshelf page">
     <h1>Bookshelf</h1>
+    <p>
+      A non-exhaustive list of the books I'm currently reading, plan to read or
+      have read. If a book is listed here as read, I think highly of it.
+    </p>
     <ul>
       <li v-for="(book, index) in books" :key="index">
         <a :href="book.link" target="_blank">
@@ -63,7 +67,7 @@ export default {
         {
           title: "I am the Nigerian Nation",
           link: "https://www.amazon.com/Am-Nigerian-Nation-1914-2007-Nigerias/dp/9789319665",
-          status: "-1",
+          status: "-",
         },
         {
           title: "The Design of Everyday Things",
@@ -195,30 +199,6 @@ export default {
           year: 2022,
         },
         {
-          title: "Rules of Prey",
-          link: "https://www.amazon.com/Rules-Prey-Lucas-Davenport-No/dp/0425205819",
-          status: 1,
-          year: 2022,
-        },
-        {
-          title: "Phantom Prey",
-          link: "https://www.amazon.com/Phantom-Prey-Novel-John-Sandford/dp/0425227987",
-          status: 1,
-          year: 2022,
-        },
-        {
-          title: "Certain Prey",
-          link: "https://www.amazon.com/Certain-Prey-Novel-John-Sandford/dp/0425274314",
-          status: 1,
-          year: 2022,
-        },
-        {
-          title: "Mind Prey",
-          link: "https://www.amazon.com/Mind-Prey-Novel-John-Sandford/dp/0425244490",
-          status: 1,
-          year: 2022,
-        },
-        {
           title: "Flowers for Algernon",
           link: "https://www.amazon.com/Flowers-Algernon-Daniel-Keyes/dp/0156030306",
           status: 1,
@@ -243,12 +223,6 @@ export default {
           year: 2021,
         },
         {
-          title: "Armada",
-          link: "https://www.amazon.com/Armada-Novel-Ernest-Cline/dp/0804137250",
-          status: 1,
-          year: 2021,
-        },
-        {
           title: "Good Kids, Bad City",
           link: "https://www.amazon.com/Good-Kids-Bad-City-Conviction/dp/1250120233",
           status: 1,
@@ -257,6 +231,66 @@ export default {
         {
           title: "American Assassin",
           link: "https://www.amazon.com/American-Assassin-Thriller-Mitch-Novel/dp/141659518X",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "The Girl Who Takes an Eye for an Eye",
+          link: "https://www.amazon.com/Girl-Who-Takes-Eye-continuing/dp/0451494326",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "The Alice Network",
+          link: "https://www.amazon.com/Alice-Network-Novel-Kate-Quinn/dp/0062654195",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "Camino Island",
+          link: "https://www.amazon.com/Camino-Island-Novel-John-Grisham/dp/1524797146",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "The Great Alone",
+          link: "https://www.amazon.com/Great-Alone-Novel-Kristin-Hannah/dp/1250229537",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "Fifty Fifty",
+          link: "https://www.amazon.com/Fifty-Harriet-Blue-James-Patterson/dp/1538760665",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "An American Marriage",
+          link: "https://www.amazon.com/American-Marriage-Novel-Tayari-Jones/dp/1616208686",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "Born on a Tuesday",
+          link: "https://www.amazon.com/Born-Tuesday-Novel-Elnathan-John/dp/0802124828",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "Memoirs of a Geisha",
+          link: "https://www.amazon.com/Memoirs-Geisha-Novel-Arthur-Golden/dp/0679781587",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "The Tattooist of Auschwitz",
+          link: "https://www.amazon.com/Tattooist-Auschwitz-Novel-Heather-Morris/dp/0062797158",
+          status: 1,
+          year: 2021,
+        },
+        {
+          title: "Where the Crawdads Sing",
+          link: "https://www.amazon.com/Where-Crawdads-Sing-Delia-Owens/dp/0735219109",
           status: 1,
           year: 2021,
         },
@@ -277,6 +311,18 @@ export default {
           link: "https://www.amazon.com/Chike-River-Chinua-Achebe/dp/0307473864",
           status: 1,
           year: 2021,
+        },
+        {
+          title: "Bad Blood",
+          link: "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/0525431993",
+          status: 1,
+          year: 2020,
+        },
+        {
+          title: "Super Pumped: The Battle for Uber",
+          link: "https://www.amazon.com/Super-Pumped-Battle-Mike-Isaac/dp/0393358615",
+          status: 1,
+          year: 2020,
         },
       ],
       statuses: {
