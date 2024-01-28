@@ -25,6 +25,12 @@ export default {
     return {
       books: [
         {
+          title: "Die With Zero",
+          link: "https://www.amazon.com/Die-Zero-Getting-Your-Money/dp/0358099765",
+          status: 1,
+          year: 2024,
+        },
+        {
           title: "The Autobiography of MLK",
           link: "https://www.amazon.com/Autobiography-Martin-Luther-King-Jr/dp/0446676500",
           status: "-1",
