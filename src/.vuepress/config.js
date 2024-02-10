@@ -31,7 +31,7 @@ module.exports = {
     seo: {
       siteTitle: (_, $site) => $site.title,
       title: ($page) => $page.frontmatter.title,
-      description: ($page) => $page.frontmatter.description,
+      description: ($page) => $page.frontmatter.title,
       author: () => ({ name: "Clinton Mbah", twitter: "@mclint_" }),
       tags: ($page) => $page.frontmatter.tags,
       twitterCard: (_) => "summary_large_image",
