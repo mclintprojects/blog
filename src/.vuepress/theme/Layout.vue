@@ -69,6 +69,10 @@ body {
   margin-top: 1.6rem;
 }
 
+a span {
+  display: none !important;
+}
+
 @media screen and (max-device-width: 932px) {
   body {
     padding: 24px 24px 0 24px;
