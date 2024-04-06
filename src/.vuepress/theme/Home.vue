@@ -4,7 +4,7 @@
       <div>
         <img class="selfie" src="/images/mclint.jpg" />
         <h1>Clinton "Anwu" Mbah</h1>
-        <p>Accra, Ghana 🇬🇭 &bull; The Internet</p>
+        <p>Lagos, Nigeria 🇳🇬 &bull; The Internet</p>
         <ul class="introduction-socials">
           <li>
             <a href="https://twitter.com/mclint_" target="_blank">Twitter</a>
