@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fugaz One";
+  font-family: "Tac One";
   line-height: 140%;
   color: var(--text-primary);
 }

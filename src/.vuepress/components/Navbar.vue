@@ -1,8 +1,8 @@
 <template>
   <div class="navbar">
-    <a href="/">
-      <img :src="$withBase('/selfie.png')" alt="logo" />
-    </a>
+    <a href="/"
+      ><img :src="$withBase('/selfie.png')" alt="logo" class="logo"
+    /></a>
 
     <ul class="nav-links">
       <a
@@ -55,8 +55,9 @@ label {
   font-size: 1.6rem;
 }
 
-a img {
-  width: 2.4rem;
+.logo {
+  width: 3.2rem;
+  height: 3.2rem;
   margin-right: 2rem;
 }
 
@@ -68,10 +69,10 @@ a img {
 
 .nav-links a {
   margin-right: 2rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Fugaz One";
+  font-family: "Tac One";
   color: var(--text-primary);
 }
 

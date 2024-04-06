@@ -28,7 +28,7 @@ export default {
   computed: {
     pages() {
       return this.$site.pages
-        .filter((page) => page.path.endsWith(".html"))
+        .filter((page) => page.path.includes("/posts/"))
         .sort(
           (page, next) =>
             new Date(next.frontmatter.published).getTime() -
@@ -54,7 +54,7 @@ export default {
 <style>
 h1 {
   color: var(--text-primary);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h1 + p {
@@ -76,7 +76,7 @@ li ul {
 }
 
 ol {
-  font-family: "Fugaz One";
+  font-family: "Tac One";
   margin-left: 1.6rem;
   margin-top: 1.6rem;
 }
@@ -197,7 +197,7 @@ footer {
 }
 
 footer p + a {
-  font-family: "Fugaz One", sans-serif;
+  font-family: "Tac One", sans-serif;
 }
 
 footer div {
