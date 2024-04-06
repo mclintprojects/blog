@@ -2,7 +2,7 @@
   <div class="home page">
     <div class="introduction">
       <div>
-        <img class="selfie" src="/images/selfie-large.png" />
+        <img class="selfie" src="/images/mclint.jpg" />
         <h1>Clinton "Anwu" Mbah</h1>
         <p>Accra, Ghana 🇬🇭 &bull; The Internet</p>
         <ul class="introduction-socials">
