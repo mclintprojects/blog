@@ -58,6 +58,7 @@ export default {
   margin-top: 3rem;
   margin-left: 0;
   padding: 0;
+  padding-bottom: 3.2rem;
 }
 
 .projects ul li {
@@ -87,7 +88,7 @@ export default {
 .project-name {
   font-size: 1.8rem;
   font-weight: bold;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 
 .project-description {
@@ -95,6 +96,6 @@ export default {
   color: var(--text-primary-light);
   word-wrap: break-word;
   word-break: break-word;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 </style>

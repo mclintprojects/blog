@@ -90,7 +90,7 @@ export default {};
 .introduction-socials li a {
   font-size: 1.4rem;
   color: black;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
   text-transform: uppercase;
 }
 

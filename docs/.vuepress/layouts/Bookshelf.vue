@@ -1,10 +1,6 @@
 <template>
   <div class="bookshelf page">
     <h1>Bookshelf</h1>
-    <p>
-      A non-exhaustive list of the books I'm currently reading, plan to read or
-      have read. If a book is listed here as read, I think highly of it.
-    </p>
     <ul>
       <li v-for="(book, index) in books" :key="index">
         <a :href="book.link" target="_blank">
@@ -347,6 +343,7 @@ export default {
   margin: 0;
   margin-top: 3.2rem;
   padding: 0;
+  padding-bottom: 3.2rem;
 }
 
 .bookshelf ul li {
@@ -365,16 +362,20 @@ export default {
   text-decoration: none;
 }
 
+.bookshelf ul li a span {
+  display: inline !important;
+}
+
 .book-title {
   color: var(--text-primary);
   font-weight: bold;
   font-size: 1.8rem;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 
 .book-title+p {
   color: var(--text-primary-light);
   font-size: 1.4rem;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 </style>

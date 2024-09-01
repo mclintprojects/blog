@@ -60,7 +60,7 @@ h1+p {
   margin-bottom: 3rem;
   margin-top: 0;
   color: var(--text-primary-light);
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 
 .content p {
@@ -196,7 +196,7 @@ footer {
 }
 
 footer p+a {
-  font-family: "Departure Mono", sans-serif;
+  font-family: "Departure Mono", monospace;
 }
 
 footer div {
@@ -208,7 +208,7 @@ footer div p {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
   color: var(--text-primary-light);
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 
 footer div p+a {
@@ -229,6 +229,6 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: black;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 </style>

@@ -55,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
   line-height: 160%;
   color: var(--text-primary);
 }

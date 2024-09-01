@@ -58,13 +58,13 @@ export default defineComponent({
   color: var(--text-primary);
   font-weight: bold;
   font-size: 1.8rem;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 
 .post-publish-date {
   color: var(--text-primary-light);
   margin-top: 0;
   font-size: 1.4rem;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
 }
 </style>

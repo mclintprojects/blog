@@ -33,7 +33,7 @@ export default {
   display: flex;
   align-items: center;
   margin: auto;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
   width: var(--page-width);
 }
 
@@ -59,7 +59,7 @@ label {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Departure Mono";
+  font-family: "Departure Mono", monospace;
   color: var(--text-primary);
 }
 
