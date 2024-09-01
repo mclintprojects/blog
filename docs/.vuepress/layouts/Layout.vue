@@ -73,6 +73,7 @@ body {
 .page {
   width: var(--page-width);
   padding: 3.2rem auto !important;
+  margin: 0 auto;
   margin-top: 3.2rem;
 }
 
