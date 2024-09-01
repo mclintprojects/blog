@@ -44,7 +44,7 @@ export default {
 
 p {
   line-height: 180%;
-  font-family: "Departure Mono";
+  font-family: "Inter";
   color: var(--text-primary);
   font-size: 1.8rem;
 }

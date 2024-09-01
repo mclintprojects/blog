@@ -4,7 +4,7 @@ published: 02/14/2021
 readTime: 4
 ---
 
-In this tutorial you will learn how to setup auth for GraphQL queries & mutations using [Knock](https://github.com/nsarno/knock)
+In this tutorial you will learn how to setup auth for GraphQL queries & mutations using [Knock](https://github.com/nsarno/knock).
 
 Knock is a super easy to setup authentication gem for Rails applications based on JWTs. It's been my go-to for JWT authentication ever since I started using it because it just works out-of-the-box.
 

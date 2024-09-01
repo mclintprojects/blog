@@ -52,6 +52,7 @@ export default {
 h1 {
   color: var(--text-primary);
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 h1+p {
@@ -59,6 +60,7 @@ h1+p {
   margin-bottom: 3rem;
   margin-top: 0;
   color: var(--text-primary-light);
+  font-family: "Departure Mono";
 }
 
 .content p {
@@ -85,15 +87,15 @@ a.header-anchor {
   color: black;
 }
 
-.content__default h2,
-.content__default h3 {
+.content h2,
+.content h3 {
   margin-top: 2.4rem;
   margin-bottom: 1.6rem;
 }
 
 ul li,
 ol li,
-.content__default p,
+.content p,
 aside {
   margin-top: 2.4rem;
   font-size: 1.6rem;
@@ -106,7 +108,6 @@ ul li {
 }
 
 aside {
-  background: hsl(129, 90%, 95%);
   padding: 1.6rem;
   margin-top: 0;
   border-radius: 0.8rem;
@@ -127,39 +128,37 @@ hr {
   margin: 6rem auto;
 }
 
-.content__default em {
-  background: rgb(234, 234, 234);
-}
+.content em {}
 
-.content__default code,
-.content__default pre {
-  font-size: 1.2rem;
-  background: rgb(238, 244, 246);
+.content code,
+.content pre {
   color: black;
+  font-size: 1.2rem;
   padding: 4px 10px;
   border-radius: 8px;
   font-family: apple-system, consolas, sans-serif;
   white-space: pre-wrap;
 }
 
-.content__default pre span {
+.content pre span {
   word-wrap: break-word;
   word-break: break-all;
 }
 
-.content__default pre {
+.content pre {
   margin-top: 1.2rem;
   width: 100%;
   padding: 1.6rem;
 }
 
-.content__default pre code {
+.content pre code {
   background: transparent;
   padding: 0;
   border-radius: 0;
+  color: white;
 }
 
-.content__default code .token .keyword {
+.content code .token .keyword {
   color: rgb(220, 55, 55) !important;
 }
 
@@ -209,6 +208,7 @@ footer div p {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
   color: var(--text-primary-light);
+  font-family: "Departure Mono";
 }
 
 footer div p+a {

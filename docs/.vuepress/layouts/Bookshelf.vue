@@ -369,10 +369,12 @@ export default {
   color: var(--text-primary);
   font-weight: bold;
   font-size: 1.8rem;
+  font-family: "Departure Mono";
 }
 
 .book-title+p {
   color: var(--text-primary-light);
   font-size: 1.4rem;
+  font-family: "Departure Mono";
 }
 </style>

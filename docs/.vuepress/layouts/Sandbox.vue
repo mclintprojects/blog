@@ -87,6 +87,7 @@ export default {
 .project-name {
   font-size: 1.8rem;
   font-weight: bold;
+  font-family: "Departure Mono";
 }
 
 .project-description {
@@ -94,5 +95,6 @@ export default {
   color: var(--text-primary-light);
   word-wrap: break-word;
   word-break: break-word;
+  font-family: "Departure Mono";
 }
 </style>
