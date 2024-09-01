@@ -6,7 +6,7 @@
       {{ getReadTimeLabel($page.frontmatter.readTime) }}
     </p>
 
-    <Content />
+    <Content class="content" />
 
     <footer>
       <div v-if="nextPost">
@@ -23,18 +23,15 @@
 </template>
 
 <script>
+import { usePages } from "@temp/pages";
+
 export default {
   name: "Post",
+  setup() {
+    const pages = usePages();
+    return { pages }
+  },
   computed: {
-    pages() {
-      return this.$site.pages
-        .filter((page) => page.path.includes("/posts/"))
-        .sort(
-          (page, next) =>
-            new Date(next.frontmatter.published).getTime() -
-            new Date(page.frontmatter.published).getTime()
-        );
-    },
     nextPost() {
       const index = this.pages.findIndex((p) => p.title == this.$page.title);
       return index + 1 > this.pages.length ? null : this.pages[index + 1];
@@ -57,11 +54,16 @@ h1 {
   font-size: 4rem;
 }
 
-h1 + p {
+h1+p {
   font-size: 1.4rem;
   margin-bottom: 3rem;
   margin-top: 0;
   color: var(--text-primary-light);
+}
+
+.content p {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
 }
 
 ul {
@@ -76,7 +78,6 @@ li ul {
 }
 
 ol {
-  font-family: "Tac One";
   margin-left: 1.6rem;
   margin-top: 1.6rem;
 }
@@ -97,7 +98,6 @@ ol li,
 aside {
   margin-top: 2.4rem;
   font-size: 1.6rem;
-  font-family: "Inter";
   line-height: 160%;
   color: var(--text-primary);
 }
@@ -184,6 +184,7 @@ hr {
 .symbol {
   color: rgb(44, 198, 27);
 }
+
 .comment {
   font-style: italic;
   color: rgba(38, 38, 38, 0.678);
@@ -196,8 +197,8 @@ footer {
   padding-bottom: 3rem;
 }
 
-footer p + a {
-  font-family: "Tac One", sans-serif;
+footer p+a {
+  font-family: "Departure Mono", sans-serif;
 }
 
 footer div {
@@ -211,7 +212,7 @@ footer div p {
   color: var(--text-primary);
 }
 
-footer div p + a {
+footer div p+a {
   font-weight: bold;
   font-size: 3rem;
   color: var(--text-primary);
@@ -219,6 +220,7 @@ footer div p + a {
 
 footer ul {
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   color: var(--text-primary);
@@ -228,6 +230,6 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   color: black;
-  font-family: "Inter";
+  font-family: "Departure Mono";
 }
 </style>

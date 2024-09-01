@@ -57,6 +57,7 @@ export default {
 .projects ul {
   margin-top: 3rem;
   margin-left: 0;
+  padding: 0;
 }
 
 .projects ul li {
@@ -89,6 +90,7 @@ export default {
 }
 
 .project-description {
+  font-size: 1.4rem;
   color: var(--text-primary-light);
   word-wrap: break-word;
   word-break: break-word;

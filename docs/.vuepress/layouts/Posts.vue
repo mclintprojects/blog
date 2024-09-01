@@ -15,32 +15,27 @@
 </template>
 
 <script>
-export default {
-  computed: {
-    pages() {
-      return this.$site.pages
-        .filter(
-          (page) => page.path.endsWith(".html") && !page.frontmatter.route
-        )
-        .sort(
-          (page, next) =>
-            new Date(next.frontmatter.published).getTime() -
-            new Date(page.frontmatter.published).getTime()
-        );
-    },
+import { defineComponent } from 'vue';
+import { usePages } from "@temp/pages";
+
+export default defineComponent({
+  setup() {
+    const pages = usePages();
+    return { pages }
   },
   methods: {
     getDate(dateString) {
       return new Date(dateString).toDateString().substring(4);
     },
   },
-};
+});
 </script>
 
 <style>
 .posts ul {
   margin: 0;
   margin-top: 3.2rem;
+  padding: 0;
 }
 
 .posts ul li {
@@ -68,5 +63,6 @@ export default {
 .post-publish-date {
   color: var(--text-primary-light);
   margin-top: 0;
+  font-size: 1.4rem;
 }
 </style>

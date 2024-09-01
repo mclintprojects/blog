@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Home from "./Home";
-import Post from "../components/Post";
-import Posts from "./Posts";
-import Bookshelf from "./Bookshelf";
-import Sandbox from "./Sandbox";
-import Navbar from "../components/Navbar";
+import Home from "./Home.vue";
+import Post from "../components/Post.vue";
+import Posts from "./Posts.vue";
+import Bookshelf from "./Bookshelf.vue";
+import Sandbox from "./Sandbox.vue";
+import Navbar from "../components/Navbar.vue";
 
 export default {
   components: { Home, Navbar, Posts, Post, Bookshelf, Sandbox },
@@ -31,6 +31,11 @@ export default {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "Departure Mono";
+  src: url("/fonts/DepartureMono-Regular.otf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,8 +43,8 @@ export default {
 }
 
 p {
-  line-height: 160%;
-  font-family: "Inter";
+  line-height: 200%;
+  font-family: "Departure Mono";
   color: var(--text-primary);
 }
 
@@ -49,9 +54,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Tac One";
-  line-height: 140%;
+  font-family: "Departure Mono";
+  line-height: 160%;
   color: var(--text-primary);
+}
+
+h1 {
+  font-size: 2.8rem;
 }
 
 body {
@@ -62,11 +71,16 @@ body {
 
 .page {
   width: var(--page-width);
-  margin: 6rem auto;
+  padding: 3.2rem auto !important;
+  margin-top: 3.2rem;
 }
 
 .mt-2 {
   margin-top: 1.6rem;
+}
+
+a {
+  text-decoration: underline;
 }
 
 a span {

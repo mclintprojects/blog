@@ -346,6 +346,7 @@ export default {
 .bookshelf ul {
   margin: 0;
   margin-top: 3.2rem;
+  padding: 0;
 }
 
 .bookshelf ul li {
@@ -370,7 +371,8 @@ export default {
   font-size: 1.8rem;
 }
 
-.book-title + p {
+.book-title+p {
   color: var(--text-primary-light);
+  font-size: 1.4rem;
 }
 </style>

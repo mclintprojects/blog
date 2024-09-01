@@ -4,23 +4,19 @@
       <div>
         <img class="selfie" src="/images/mclint.jpg" />
         <h1>Clinton "Anwu" Mbah</h1>
-        <p>Lagos, Nigeria 🇳🇬 &bull; The Internet</p>
+        <p>Accra, Ghana 🇬🇭 &bull; The Internet</p>
         <ul class="introduction-socials">
           <li>
             <a href="https://twitter.com/mclint_" target="_blank">Twitter</a>
           </li>
           <li>
-            <a href="https://github.com/mclintprojects" target="_blank"
-              >GitHub</a
-            >
+            <a href="https://github.com/mclintprojects" target="_blank">GitHub</a>
           </li>
           <li>
             <a href="https://vsco.co/mclint" target="_blank">VSCO</a>
           </li>
           <li>
-            <a href="https://www.inprnt.com/gallery/mclint/" target="_blank"
-              >Inprnt</a
-            >
+            <a href="https://www.inprnt.com/gallery/mclint/" target="_blank">Inprnt</a>
           </li>
           <li>
             <a href="mailto:clintonmbah44@gmail.com">Email</a>
@@ -35,11 +31,8 @@
         <p class="mt-2">
           I am fortunate to be spending most of my time on what feels like my
           life's work — a startup that's building a
-          <a
-            href="https://blog.useaccrue.com/2023/06/09/the-accrue-master-plan/"
-            target="_blank"
-            >USD-stablecoin agent network</a
-          >
+          <a href="https://blog.useaccrue.com/2023/06/09/the-accrue-master-plan/" target="_blank">USD-stablecoin agent
+            network</a>
           for fast and cheap cross-border payments within Africa. Previously, I
           worked at
           <a href="https://helicarrier.studio" target="_blank">Helicarrier</a>
@@ -64,16 +57,20 @@ export default {};
 
 <style>
 .selfie {
-  height: 150px;
+  height: 96px;
   margin-bottom: 1.2rem;
-  border-radius: 1.6rem;
+  border-radius: 1rem;
 }
 
-.introduction h1 + p {
+.introduction h1 {
+  text-transform: uppercase;
+}
+
+.introduction h1+p {
   text-transform: none;
-  font-size: 1.4rem;
-  margin-top: 0;
+  font-size: 1.2rem;
   margin-bottom: 0;
+  text-transform: uppercase;
   color: var(--text-primary);
 }
 
@@ -81,21 +78,25 @@ export default {};
   padding: 0;
   margin: 0;
   display: flex;
+  padding-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .introduction-socials li {
-  margin-right: 0.8rem;
+  margin-right: 1.4rem;
   list-style-type: none;
 }
 
 .introduction-socials li a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Departure Mono";
+  text-transform: uppercase;
 }
 
 .about-me {
-  margin-top: 4.8rem;
+  padding-bottom: 3.2rem;
 }
 
 .about-me p {

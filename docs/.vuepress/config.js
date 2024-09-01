@@ -1,6 +1,14 @@
+import { defineUserConfig } from "vuepress";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { defaultTheme } from "@vuepress/theme-default";
+import { seoPlugin } from "@vuepress/plugin-seo";
+import { usePagesPlugin } from "vuepress-plugin-use-pages";
+
 const baseUrl = "clintonmbah.com";
 
-module.exports = {
+export default defineUserConfig({
+  bundler: viteBundler(),
+  theme: defaultTheme({}),
   title: "Clinton Mbah",
   description:
     "Computer programmer currently focused on building delightful and impactful consumer products.",
@@ -27,16 +35,16 @@ module.exports = {
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
-  plugins: {
-    seo: {
-      siteTitle: (_, $site) => $site.title,
-      title: ($page) => $page.frontmatter.title,
-      author: () => ({ name: "Clinton Mbah", twitter: "@mclint_" }),
-      tags: ($page) => $page.frontmatter.tags,
-      twitterCard: (_) => "summary_large_image",
-      url: (_, __, path) => `${baseUrl}${path}`,
-      image: () => `${baseUrl}/images/banner.png`,
-      publishedAt: ($page) => new Date($page.frontmatter.published),
-    },
-  },
-};
+  plugins: [
+    seoPlugin({
+      hostname: `https://${baseUrl}`,
+    }),
+    usePagesPlugin({
+      startsWith: "/posts",
+      filter: (page) => page.path.endsWith(".html") && !page.frontmatter.route,
+      sort: (page, next) =>
+        new Date(next.frontmatter.published).getTime() -
+        new Date(page.frontmatter.published).getTime(),
+    }),
+  ],
+});
