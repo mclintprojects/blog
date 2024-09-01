@@ -36,6 +36,7 @@ export default defineComponent({
   margin: 0;
   margin-top: 3.2rem;
   padding: 0;
+  padding-bottom: 3.2rem;
 }
 
 .posts ul li {
