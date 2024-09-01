@@ -40,11 +40,10 @@
         </p>
         <p class="mt-2">
           I'm insatiably curious about technology, startups, crypto, art, games,
-          and music. In my free time, I'm usually reading articles, essays,
-          biographies, and novels. You might also find me dabbling in
-          photography as a hobby, vibing to RnB/Amapiano/EDM/House/OSTs, playing
-          video games, working on personal projects or painting portraits in
-          Procreate.
+          and music. In my spare time, I love reading articles, essays,
+          biographies, and novels. You might also find me exploring photography,
+          jamming to Amapiano, EDM, House, or OSTs, gaming, working on
+          personal projects, or painting portraits in Procreate.
         </p>
       </div>
     </div>
@@ -68,10 +67,10 @@ export default {};
 
 .introduction h1+p {
   text-transform: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--text-primary-light);
 }
 
 .introduction-socials {
@@ -89,7 +88,7 @@ export default {};
 }
 
 .introduction-socials li a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: black;
   font-family: "Departure Mono";
   text-transform: uppercase;
@@ -101,7 +100,6 @@ export default {};
 
 .about-me p {
   color: var(--text-primary);
-  font-size: 1.6rem;
 }
 
 .about-me p a {

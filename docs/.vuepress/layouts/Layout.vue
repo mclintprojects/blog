@@ -26,8 +26,8 @@ export default {
 :root {
   --page-width: 30%;
   --bg: #ffffff;
-  --text-primary: rgba(0, 0, 0, 8);
-  --text-primary-light: rgba(0, 0, 0, 0.54);
+  --text-primary: #333333;
+  --text-primary-light: #999999;
   font-size: 62.5%;
 }
 
@@ -43,9 +43,10 @@ export default {
 }
 
 p {
-  line-height: 200%;
+  line-height: 180%;
   font-family: "Departure Mono";
   color: var(--text-primary);
+  font-size: 1.8rem;
 }
 
 h1,

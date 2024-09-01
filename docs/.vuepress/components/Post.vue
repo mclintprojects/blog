@@ -62,7 +62,6 @@ h1+p {
 }
 
 .content p {
-  font-size: 1.6rem;
   margin-bottom: 3.2rem;
 }
 
@@ -207,9 +206,9 @@ footer div {
 
 footer div p {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin-bottom: 0.4rem;
-  color: var(--text-primary);
+  color: var(--text-primary-light);
 }
 
 footer div p+a {
